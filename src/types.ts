@@ -83,6 +83,7 @@ export type BadgeProps = {
     label?: string | number,
     size?: 'medium' | 'small',
     containerStyle?: StyleProp<ViewStyle>,
+    badgeStyle?:StyleProp<ViewStyle>,
     labelStyle?: StyleProp<TextStyle>,
     variant?: 'circular' | 'rectangular'
     icon?: React.ReactNode,
@@ -115,7 +116,8 @@ export type ChipProps = {
     labelStyle?: StyleProp<TextStyle>,
     style?: StyleProp<ViewStyle>,
     value?: boolean,
-    icon?: { iconName: string, iconType: IconType, iconPosition: 'left' | 'right' },
+    icon?: React.ReactElement,
+    iconPosition?: 'left' | 'right',
     size?: 'large' | 'medium' | 'small',
     onChange: (event: boolean) => void,
     disabled?: boolean,
@@ -123,7 +125,7 @@ export type ChipProps = {
 }
 
 export type DividerProps = {
-    borderStyle?: 'solid' | 'dotted' | 'dashed'
+    variant?: 'solid' | 'dotted' | 'dashed'
     width?: number,
     style?: StyleProp<ViewStyle>
     theme: DeepPartial<DeepPartial<(ComponentThemeType['divider'])>>
@@ -230,7 +232,7 @@ export type SearchBarProps = {
 export type SliderProps = {
     showPercentage?: boolean
     onChangeEnd: (value: number) => void
-    value?: number
+    defaultValue?: number
     buttonStyle?: StyleProp<ViewStyle>
     barStyle?: StyleProp<ViewStyle>
     progressStyle?: StyleProp<ViewStyle>
@@ -263,8 +265,8 @@ export type TextInputProps = {
     size?: 'large' | 'medium' | 'small',
     iconPosition?: 'left' | 'right',
     labelColor?: { focus: string, default: string },
-    helperText?: string,
-    helperTextStyle?: StyleProp<TextStyle>,
+    bottomLabel?: string,
+    bottomLabelStyle?: StyleProp<TextStyle>,
     variant?: 'filled' | 'outlined',
     inputContainerStyle?: StyleProp<ViewStyle>,
     labelContainerStyle?: StyleProp<ViewStyle>,
@@ -273,7 +275,6 @@ export type TextInputProps = {
     labelStyle?: StyleProp<TextStyle>,
     editable?: boolean,
     inputStyle?: StyleProp<TextStyle>,
-    errorMessage?: string,
     containerStyle?: StyleProp<ViewStyle>,
     error?: boolean,
     left?: React.ReactNode,
