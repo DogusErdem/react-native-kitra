@@ -1,6 +1,6 @@
 import type { FC, PropsWithChildren } from 'react';
 import type React from 'react';
-import type { Animated, ImageSourcePropType, StyleProp, TextProps, TextStyle, ViewProps, ViewStyle } from 'react-native';
+import type { Animated, FlatList, ImageSourcePropType, StyleProp, TextProps, TextStyle, ViewProps, ViewStyle } from 'react-native';
 import { Swipeable } from 'react-native-gesture-handler';
 import type Icon from './components/Icons/Icon';
 import type { defaultTypography } from './core/typography/typography';
@@ -54,14 +54,7 @@ export type AccordionListProps = {
 }
 
 export type AvatarGroupProps = {
-    avatars: Array<{
-        source?: ImageSourcePropType,
-        variant?: 'circular' | 'rounded',
-        avatarIcon?: React.ReactNode,
-        containerStyle?: StyleProp<ViewStyle>,
-        label?: string,
-        labelStyle?: StyleProp<TextStyle>,
-    }>,
+    avatars: Array<Omit<AvatarProps, 'theme' | 'size'>>,
     avatarLimit?: number,
     limitContainerStyle?: { style: StyleProp<TextStyle>, backgroundColor: string }
     theme: DeepPartial<(ComponentThemeType['avatarGroup'])>
@@ -159,14 +152,6 @@ export type DrowdownProps = {
 
 export type MultipleDropdownProps = DrowdownProps & { theme: DeepPartial<(ComponentThemeType['multipleDropdown'])> }
 export type DrowdownRouteProps= MultipleDropdownProps& { multiple: boolean }
-
-export type IconButtonProps = {
-    iconColor?: string,
-    containerColor?: string,
-    style: ViewStyle,
-    icon: { type: IconType, name: string, size: number },
-    focusedColor: string
-}
 
 export type IconProps = {
     name: string;
@@ -300,27 +285,20 @@ export type SpeedDialProps = {
     theme: DeepPartial<(ComponentThemeType['speedDial'])>
 };
 
-export type ModalProps = {
-    containerStyle?: StyleProp<ViewStyle>,
-    modalStyle?: StyleProp<ViewStyle>,
-    visible?: boolean,
-    children?: React.ReactNode,
-};
-
 export type NotificationProps = {
     items: [{ status: 'SUCCESS' | 'WARNING' | 'ERROR' | 'INFO', header?: string, message?: string, keyID?: number }],
     containerStyle?: StyleProp<ViewStyle>,
     limit?: number
 }
 export type PagerViewProps = {
+    ref: React.RefObject<FlatList>,
     children: React.ReactNode
+    customHeader?: React.ReactNode[]
     containerStyle?: StyleProp<ViewStyle>
     pageContainerStyle?: StyleProp<ViewStyle>
-    injectPagerRef?: boolean,
     headerSliderStyle?: StyleProp<ViewStyle>,
     headerContainerStyle?: StyleProp<ViewStyle>,
     headerLabelStyle?: StyleProp<TextStyle>,
-    icons?: React.ReactElement<typeof Icon>[],
     theme: DeepPartial<(ComponentThemeType['pagerView'])>
 }
 export type ActivityIndicatorProps = {
@@ -338,11 +316,10 @@ export type IconType =
     | 'ionicon'
     | 'foundation'
     | 'feather'
-    | 'ant-design'
     | 'fontisto'
     | 'evilicon'
     | 'entypo'
-    | 'antdesign'
+    | 'ant-design'
     | 'font-awesome-5';
 
 export type DeepPartial<T> = T extends object ? {
