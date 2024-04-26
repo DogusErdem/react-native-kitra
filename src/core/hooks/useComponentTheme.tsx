@@ -1,4 +1,5 @@
 import merge from 'lodash.merge';
+import React from 'react';
 import { ComponentThemeType, Components, DeepPartial } from '../../types';
 import useTheme from './useTheme';
 import { COLOR_COMPONENTS_LIGHT } from '../theme/colors';
@@ -12,7 +13,7 @@ type ComponentConditions={
 }
 type Condition<T extends Components> = ComponentConditions[T];
 
-const useComponentTheme = <T extends Components>(extraTheme: ComponentThemes[T], component: T, condition?:Condition<T>) => {
+const useComponentTheme = <T extends Components>(extraTheme: ComponentThemes[T] | undefined, component: T, condition?:Condition<T>) => {
   const { theme: coreTheme } = useTheme();
 
   const tempTheme:ComponentThemeType = JSON.parse(JSON.stringify(coreTheme));
