@@ -276,9 +276,13 @@ export type ChipProps = {
     */
     value?: boolean,
     /**
-        *Used to add icon to chip
+        *Additional element to apply to left side of the chip
     */
-    icon?: React.ReactElement,
+    left: React.ReactElement,
+    /**
+        *Additional element to apply to right side of the chip
+    */
+    right: React.ReactElement,
     /**
         *The position of the icon in relation to the label. Defaults to 'right'
     */
@@ -568,6 +572,10 @@ export type SearchBarProps = {
 }
 
 export type SliderProps = {
+     /**
+        *Additional styles to apply to the slider container
+    */
+        containerStyle?: StyleProp<ViewStyle>,
     /**
         *Determines whether to show the percentage indicator above the slider button
      */
@@ -742,6 +750,10 @@ export type ToggleButtonProps = {
 }
 
 export type SpeedDialProps = {
+     /**
+        *Additional styles to apply to the container
+    */
+        containerStyle?: StyleProp<ViewStyle>,
     /**
         *Items to be listed in the speed dial.
         *
