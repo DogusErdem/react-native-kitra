@@ -208,11 +208,11 @@ export type ButtonProps = {
     /**
         *Additional element to apply to left side of the button
     */
-    left?: React.ReactElement,
+    left?:(event:boolean)=> React.ReactElement,
      /**
         *Additional element to apply to right side of the button
     */
-    right?: React.ReactElement,
+    right?:(event:boolean)=> React.ReactElement,
     /**
         *The position of the icon in relation to the label. Defaults to 'left'
     */
@@ -278,11 +278,11 @@ export type ChipProps = {
     /**
         *Additional element to apply to left side of the chip
     */
-    left: React.ReactElement,
+    left:(event:boolean)=> React.ReactElement,
     /**
         *Additional element to apply to right side of the chip
     */
-    right: React.ReactElement,
+    right:(event:boolean)=> React.ReactElement,
     /**
         *The position of the icon in relation to the label. Defaults to 'right'
     */
@@ -715,11 +715,11 @@ export type TextInputProps = {
     /**
         *Renders the given React element to the left side
     */
-    left?: React.ReactNode,
+    left?:(event:boolean)=> React.ReactNode,
     /**
         *Renders the given React element to the right side
     */
-    right?: React.ReactNode,
+    right?:(event:boolean)=> React.ReactNode,
     /**
         *The theme to use for the component
     */
