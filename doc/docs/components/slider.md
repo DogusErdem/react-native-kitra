@@ -30,7 +30,8 @@ export default App;
 |----------------|-------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | showPercentage | boolean                 | No       | Determines whether to show the percentage indicator above the slider button.                                                              |
 | onChangeEnd    | (value: number) => void | Yes       | A callback function that is called when the user releases the slider button. The selected value is passed as an argument to the function. |
-| value          | number                  | No       | The initial value of the slider. Should be a value between 0 and 100, representing the percentage of the slider's width.                  |
+| defaultValue   | number                  | No       | The initial value of the slider.                  |
+| containerStyle | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)         | No       | Additional styles to apply to the slider container.                               |
 | buttonStyle    | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)        | No       | Additional styles to apply to the slider button.                                                                                          |
 | barStyle       | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)         | No       | Additional styles to apply to the slider bar.                                                                                             |
 | progressStyle  | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)         | No       | Additional styles to apply to the progress bar.                                                                                           |

@@ -36,8 +36,7 @@ export default App;
 | Prop Name     | Type                | Required | Description |
 |---------------|---------------------|----------|-------------|
 | progress      | ``number``              | No       | The progress value as a percentage. Default value: ``0``. |
-| barColor      | ``string``              | No       | The background color of the progress bar. |
-| progressColor | ``string``              | No       | The color of the progress bar. |
-| progressStyle | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)  | No       |Style object to be applied to the progress bar. |
+| progressStyle | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)  | No       |Additional styles to apply to the progress. |
+| barStyle | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)  | No       |Additional styles to apply to the progress bar. |
 | theme         | ``UITheme``              | No       | The theme to use for the component. |
 

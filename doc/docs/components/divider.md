@@ -32,7 +32,6 @@ export default App;
 |------------|---------------------------------------------------------------------------|----------|------------------------------------------------------|
 | borderStyle |<code >'solid' \| 'dotted' \| 'dashed' </code>                            | No       | Additional styles to apply to the divider border style. Default value: ``'solid'``          |
 | width      | ``number``                                                                | No       | Width of divider. Default value: ``'100%'``             |
-| color      | ``string``                                                                | No       | Color of divider. |
 | style      | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props) | No       | Additional styles to apply to the divider.           |
 | theme      | ``UITheme ``                                                              | No       | The UI theme to use for the component.               |
 

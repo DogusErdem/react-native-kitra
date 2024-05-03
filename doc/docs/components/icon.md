@@ -37,5 +37,5 @@ export default App;
 | color      | ``string``                                                                | No       | Color of icon. |
 | size      | ``number``                                                                | Yes       | Size of icon. |
 | allowFontScaling| ``boolean``                                                         | Yes       | Specifies whether fonts should scale to respect Text Size accessibility settings. Default value: ``true``. |
-| style      | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props) | No       | Additional styles to apply to the divider.           |
+| style      | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props) | No       | Additional styles to apply to the icon.          |
 | theme      | ``UITheme ``                                                              | No       | The UI theme to use for the component.               |

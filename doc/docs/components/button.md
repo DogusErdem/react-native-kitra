@@ -42,18 +42,13 @@ export default App;
 |------|------|----------|-------------|
 | size | <code>'small' \| 'medium' \| 'large'</code> | No | The size of the button. Default value: ``'medium'``. |
 | disabled | ``boolean`` | No | Determines whether the button is disabled. Default value: ``false``. |
+| left                | ``(event: boolean) =>  React.ReactElement ``      | No       | Renders the given React element to the left side.                                            |
+| right               | ``(event: boolean) => React.ReactElement``        | No       | Renders the given React element to the right side.                                           |
 | label | ``string`` | No | The label to display on the button. |
-| iconPosition | <code >'left' \| 'right'</code>  | No | The position of the icon in relation to the label. Default value: ``'left'``. |
-| style | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props) | No | The style object for the button. |
-| labelStyle | [``StyleProp<TextStyle>``](https://reactnative.dev/docs/text-style-props) | No | The style object for the button's text. |
-| children | [``React.ReactNode``](https://reactnative.dev/docs/react-node) | No | Icons to be rendered inside the button. |
-| statusStyle                 |``ActionProps``                                       | No       | Contains style definitions for a button component's normal, focused, and disabled states, specifying background and text colors.                                                     |
+| style | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props) | No | Additional styles to apply to the button. |
+| labelStyle | [``StyleProp<TextStyle>``](https://reactnative.dev/docs/text-style-props) | No | Additional styles to apply to the label. |
 | theme | ``UITheme`` | No | The theme to use for the component. |
 | typography | ``UITypography`` | No | The typography to use for the component. |
 | ...PressableProps | [``Pressable``](https://reactnative.dev/docs/pressable#props) | No | Any additional props to be passed to the underlying `Pressable` component. |
 
-### Types
-| Name | Type |
-|-----------|-----------|
-| ActionProps | `` { default:{container: {backgroundColor: string},text: {color: string}},``<br/>`` focused: {container: {backgroundColor: string},text: {color: string}}, ``<br/>``disabled: {container: { backgroundColor: string},text:{color:string}}}``  |
 

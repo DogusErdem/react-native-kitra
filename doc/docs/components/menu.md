@@ -44,11 +44,10 @@ export default App;
 |----------------|-----------------------------------------------------------------------------------------------------|----------|---------------------------------------------------|
 | items          | ``Array<{label:string,``<br/>`` left?: React.ReactNode, right?:React.ReactNode, onPress ?: ()=>void}>`` | Yes       | Items to be listed in the menu.                   |
 | containerStyle | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)                           | No       | Additional styles to apply to the menu container. |
-| labelStyle     | [``StyleProp<TextStyle>``](https://reactnative.dev/docs/text-style-props)                           | No       | Additional styles to apply to the label text.     |
-| rowStyle     | [``StyleProp<TextStyle>``](https://reactnative.dev/docs/text-style-props)                           | No       | Additional styles to apply to the row container.     |
-| dividerColor   | ``string``                                                                                          | No       | Color of divider.                                 |
+| rowTextStyle   | [``StyleProp<TextStyle>``](https://reactnative.dev/docs/text-style-props)                           | No       | Additional styles to apply to each the row text.     |
+| rowStyle     | [``StyleProp<TextStyle>``](https://reactnative.dev/docs/text-style-props)                           | No       | Additional styles to apply to each row container.     |
 | menuStyle      | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)                           | No       | Additional styles to apply to the menu.           |
-| button     | [``(isOpen: boolean)=> React.ReactNode``](https://reactnative.dev/docs/react-node)               | No       | This button opens the menu. It also returns whether the menu is open or closed.|
-| closeOnPress     | ``boolean                                ``                                                    | No       | Indicates that it should close when an option is selected        |
+| button     | [``(event: boolean)=> React.ReactNode``](https://reactnative.dev/docs/react-node)               | No       | This button opens the menu. It also returns whether the menu is open or closed.|
+| closeOnPress     | ``boolean                                ``                                                    | No       | Specifies whether it should close when an option is selected.       |
 | theme          | ``UITheme                                     ``                                                    | No       | The theme to use for the component.            |
 | typography     | ``UITypography                                ``                                                    | No       | The typography to use for the component.       |

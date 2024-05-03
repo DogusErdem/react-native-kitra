@@ -36,14 +36,14 @@ export default App;
 
 | Prop name    | Type                                                                                                           | Required | Description                                                                 |
 |--------------|----------------------------------------------------------------------------------------------------------------|----------|-----------------------------------------------------------------------------|
-| label        | ``string``                                                                                                     | No       | Text of chip.                                                               |
+| label        | ``string``                                                                           | No       | The label to display on the chip.        |
 | value        | ``boolean``                                                                                                     | No       | Status of chip.                  Default value: ``'false'``                                             |
 | labelStyle        | [``StyleProp<TextStyle>``](https://reactnative.dev/docs/text-style-props)                                      | No       | Additional styles to apply to the chip.                                     |
 | style        | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)                                      | No       | Additional styles to apply to the label.                                     |
-| icon | `` { iconName: string,``<br/>``  iconType: IconType,``<br/>``  iconPosition: 'left' \| 'right'`` }     | No       | Adds an icon to a component with options for specifying the icon's name, type, and position  , enabling quick customization of the component's appearance.                              |
-| colorStyle   | `` { backgroundColor: string, selectBackgroundColor: string, selectTitleColor: string,``<br/>`` titleColor: string } `` | No       | Styles for chip color.                                                      |
+| left                | ``(event: boolean) =>  React.ReactElement ``      | No       | Renders the given React element to the left side.                                            |
+| right               | ``(event: boolean) => React.ReactElement``        | No       | Renders the given React element to the right side.                                           |
 | size         | <code> 'small' \| 'medium' \| 'large'</code>                                                                               | No       | The size of the chip. Default value: ``'small'``                              |
-| onChange     | ``(event:boolean)=> void``                                                                                     | Yes      | Returns whether the chip is selected.                                       |
+| onChange     | ``(event:boolean)=> void``                                                        | Yes      | Callback function to be called when the value of a chip component changes|
 | disabled      | ``boolean ``                                                                                                   | No       | If true the user won't be able to toggle the chip. Default value: ``false`` |
 | theme        | ``UITheme ``                                                                                                   | No       | The theme to use for the component.                                      |
 | typography   | ``UITypography``                                                                                               | No       | The typography to use for the component.                                 |

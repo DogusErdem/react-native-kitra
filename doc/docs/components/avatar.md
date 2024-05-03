@@ -34,13 +34,13 @@ export default App;
 
 | Prop name             | Type                                            | Required | Description                                                                                |
 |-----------------------|-------------------------------------------------|----------|--------------------------------------------------------------------------------------------|
-| size                  | <code>'small' \| 'medium'</code>                                          | No      | The size of the avatar. Default value: ``'medium'  ``                                                |
+| size                  | <code>'small' \| 'medium'</code>                                          | No      | The size of the avatar. Default value: ``'medium'  ``             |
 | source                |[``ImageSourcePropType``](https://reactnative.dev/docs/image#imagesource)| No      | Used to specify the image source.              |
 | variant            |<code>'circular' \| 'rounded'</code>                  | No       | Specifies the border type of the avatar. Default value: ``'circular'``|
 | avatarIcon            |``React.ReactNode      ``                    | No       | Used to add icon to avatar. |
 | containerStyle   |[``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)| No       | Additional styles to apply to the avatar container.                  |
 | label                 |``string``| No                                                 | Represents the initials of the name to be written on the avatar.                    |
-| labelStyle          |[``StyleProp<TextStyle>``](https://reactnative.dev/docs/text-style-props)| No       | Additional styles to apply to the label text.                         |
+| labelStyle          |[``StyleProp<TextStyle>``](https://reactnative.dev/docs/text-style-props)| No       | Additional styles to apply to the label.                         |
 | theme                 |``UITheme                                     `` | No       | The theme to use for the component.                                                     |
 | typography            |``UITypography                        
 
@@ -78,13 +78,13 @@ const App = () => (
 export default App;
   
 ```
-
+ <!-- Array<Omit<AvatarProps, 'theme' | 'size'>> -->
 ### Props
 
 | Prop name             | Type                                            | Required | Description                                                                                |
 |-----------------------|-------------------------------------------------|----------|--------------------------------------------------------------------------------------------|
-| avatars           | ``Array<{``<br />`` source?: ImageSourcePropType,``<br />`` variant?: 'circular' \| 'rounded',``<br />`` avatarIcon?: React.ReactNode,``<br />`` containerStyle?: StyleProp<ViewStyle>,``<br />`` label?: string,``<br />``  labelStyle?: StyleProp<TextStyle>,``<br />`` textStyle?: StyleProp<TextStyle> }, ``<br />``}> ``| Yes      | Takes avatar props into array. |
-| avatarLimit           |``number``                                        | No      |  Limit of avatars to be listed. Default value: ``10``            |
-| limitContainerStyle   |<code>'circular' \| 'rounded'</code>                   | No       | Additional styles to apply to the limit container. |
+| avatars           | ``Array<Omit<AvatarProps, 'theme' \| 'size'>>``     | Yes      | Takes avatar props into array. |
+| avatarLimit           |``number``                                       | No      |  Limit of avatars to be listed. Default value: ``10``            |
+| limitContainerStyle   |[``StyleProp<TextStyle>``](https://reactnative.dev/docs/text-style-props)| No       | Additional styles to apply to the limit container. |
 | theme                 |``UITheme                                     `` | No       | The theme to use for the component.                                                     |
 | typography            |``UITypography                                `` | No       | The typography to use for the component.                                                |

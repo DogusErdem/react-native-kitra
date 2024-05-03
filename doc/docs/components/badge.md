@@ -61,13 +61,14 @@ export default App;
 | Prop name             | Type                                            | Required | Description                                                                                |
 |-----------------------|-------------------------------------------------|----------|--------------------------------------------------------------------------------------------|
 | visible                  | ``boolean``                                   | No      | Visibility status.  Default value: ``true``                                               |
-| label                |<code> string \| number </code> | No      | The number or text to be written in the badge.                                             |
+| label                |<code> string \| number </code> | No      | Label to be displayed on the badge.                                             |
 | size                  | <code> 'small' \| 'medium'</code>                          | No       | The size of the badge. Default value: ``'medium'``                                          |
 | containerStyle   |[``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)| No       | Additional styles to apply to the badge container.                        |
-| labelStyle          |[``StyleProp<TextStyle>``](https://reactnative.dev/docs/text-style-props)| No       | Additional styles to apply to the children text.                      |
+| labelStyle          |[``StyleProp<TextStyle>``](https://reactnative.dev/docs/text-style-props)| No       | Additional styles to apply to the label.                     |
+| badgeStyle          |[``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)| No       | Additional styles to apply to the badge.                    |
 | variant               |<code>'circular'  \| 'rectangular'</code>                  | No   | Specifies the border type of the badge. Default value: ``'circular'``       |
 | icon            |[``React.ReactNode``](https://reactnative.dev/docs/react-node)                                | No       | Icon to be added to badge.                                                                |
 | children                 |[``React.ReactNode``](https://reactnative.dev/docs/react-node) | Yes  | A required prop that represents the content to display within the Badge component. |
-| position                 |<code>'top-right'\| 'top-left' \| 'bottom-left' \| 'bottom-right'</code> | No       | Position the Badge component. Default value: ``'top-right'``   |
+| badgePosition                 |<code>'topRight'\| 'topLeft' \| 'bottomLeft' \| 'bottomRight'</code> | No       | Position the Badge component. Default value: ``'bottomRight'``   |
 | theme                 |``UITheme ``                                       | No       | The theme to use for the component.                                                     |
 | typography            |``UITypography``                                    | No       | The typography to use for the component.                                                |

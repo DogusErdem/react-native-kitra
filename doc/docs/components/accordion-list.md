@@ -49,14 +49,16 @@ const App =()=>{
 |---------------------|---------------------------------------------------------------------------|----------|----------------------------------------------------------------------------------------------|
 | data                | ``Array<any>  ``                                                          | Yes      | The data to render in the accordion list.                                                    |
 | label               | ``string``                                                                | No       | The label to display at the top of the accordion list.                                       |
-| left                | ``(expanded: boolean) => React.ReactNode ``                               | No       | An optional function that returns a React element to display on the left side of the label.  |
-| right               | ``(expanded: boolean) => React.ReactNode``                                | No       | An optional function that returns a React element to display on the right side of the label. |
+| left                | ``(event: boolean) =>  React.ReactElement ``                              | No       | Renders the given React element to the left side.                                            |
+| right               | ``(event: boolean) => React.ReactElement``                                | No       | Renders the given React element to the right side.                                           |
+| containerStyle      | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)    | No       | Additional styles to apply to the accordion list container.                               |
 | labelContainerStyle | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props) | No       | Additional styles to apply to the label container.                                           |
 | labelStyle          | [``StyleProp<TextStyle>``](https://reactnative.dev/docs/text-style-props) | No       | Additional styles to apply to the label text.                                                |
 | rowTextStyle        | [``StyleProp<TextStyle>``](https://reactnative.dev/docs/text-style-props) | No       | Additional styles to apply to the row text.                                                  |
 | rowStyle            | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props) | No       | Additional styles to apply to each row container.                                            |
-| onSelect            | ``(item: any) => void ``                                                  | Yes      | A callback function that will be called when a row is selected.                              |
-| itemDisplay         | <code>(item: any) => string \| JSX.Element \| null </code>                | Yes      | A function that returns a string or JSX element to display for each row.                     |
+| onExpand            | ``() => void ``                                                           | Yes      | Callback called when accordion list is opened.                                               |
+| onSelect            | ``(event: any) => void ``                                                 | Yes      | A callback function that will be called when a row is selected.                              |
+| itemDisplay         | <code>(item: any) => any </code>                                          | Yes      | A function that returns a string or JSX element to display for each row.                     |
 | theme               | ``UITheme``                                                               | No       | The theme to use for the component.                                                          |
 | typography          | ``UITypography``                                                          | No       | The typography to use for the component.                                                     |
 

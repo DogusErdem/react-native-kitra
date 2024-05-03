@@ -41,11 +41,11 @@ export default App;
 
 | Prop name | Type | Required | Description |
 | --- | --- | --- | --- |
-| value | `boolean` | No | Determines whether the checkbox is checked or unchecked |
-| onChange | `(value: boolean) => void` | No | A callback function that is called when the checkbox is pressed, with the new state value as an argument |
-| style | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props) | No | Additional styles to apply to the checkbox container |
-| disabled | `boolean` | No | Determines whether the checkbox is disabled or not |
-| iconColor | `string` | No | The color of the checkmark icon |
-| theme | `UITheme` | No | An object containing the color palette used for the checkbox |
+| value | `boolean` | No | Determines whether the checkbox is checked or unchecked. |
+| onChange | `(event: boolean) => void` | No | Callback function to be called when the value of a check box component changes.|
+| onPress| `(event: boolean) => void` | No | Callback function to be called when the checkbox component is pressed.|
+| style | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props) | No | Additional styles to apply to the checkbox container. |
+| disabled | `boolean` | No | Determines whether the checkbox is disabled or not. |
+| theme | `UITheme` | No | An object containing the color palette used for the checkbox. |
 | ...TouchableOpacityProps | [``...TouchableOpacityProps``](https://reactnative.dev/docs/touchableopacity#props) | No | Any additional props to be passed to the underlying `TouchableOpacity` component. |
 

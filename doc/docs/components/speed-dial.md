@@ -39,9 +39,9 @@ export default App;
 
 | Prop name          | Type                                                                                                                 | Required | Description                                                      |
 |--------------------|----------------------------------------------------------------------------------------------------------------------|----------|------------------------------------------------------------------|
-| items              | ``Array<{``<br />``icon?: React.ReactNode,``<br />`` title?:string,``<br />`` titleColor?:string,``<br />`` backgroundColor?:string,``<br />`` onPress?: ()=> void}>`` |Yes| Items to be listed in the speed dial.|
-| baseItemBackground | ``string``                                                                                                           | No       | Background color of base item. Default value: ``theme.tertiary`` |
+| items| ``Array<{``<br />``icon?: React.ReactNode,``<br />`` title?:string,``<br />`` titleColor?:string,``<br />`` backgroundColor?:string,``<br />`` onPress?: ()=> void}>`` |Yes| Items to be listed in the speed dial.|
 | variant             | <code> 'flat' \| 'spread' </code>|   No       | Represents the opening animation. Default value: ``'flat'``                                                 |
+| containerStyle | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)         | No       | Additional styles to apply to the container.                              |
 | onChange             | ``(event:boolean)=>void ``     | No       | Returns whether the component is on or off.                         |
 | baseItemIcon       | [``React.ReactNode``](https://reactnative.dev/docs/react-node)                                                                            | No       | Icon of base item.                                               |
 | theme              | ``UITheme ``                                                                                                         | No       | The theme to use for the component.                           |

@@ -49,16 +49,12 @@ export default App;
 | Prop name      | Type                                                                      | Required | Description                                        |
 |----------------|---------------------------------------------------------------------------|----------|----------------------------------------------------|
 | children          | [``React.ReactNode``](https://reactnative.dev/docs/react-node)         | Yes       |A required prop that represents the content to display within the PagerView component.|
+| ref          | ``React.RefObject<FlatList>``   | Yes       |Gets a reference to the PagerView component. This reference can be used to control certain behaviors or properties of the PagerView component.|
 | containerStyle | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props) | No       | Additional styles to apply to the pager view container. |
 | pageContainerStyle          | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)                   | No       | Additional styles to apply to the page container.      |
 | headerSliderStyle          | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)                      | No       | Style of header slider.      |
 | headerContainerStyle          | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)                      | No       | Style of header slider container.      |
 | headerLabelStyle          | [``StyleProp<TextStyle>``](https://reactnative.dev/docs/text-style-props)                     | No        | Text style of header text. |
-| injectPagerRef          | ``boolean``                 | No  | An optional boolean prop that determines whether to inject the PagerView reference into each child component's props. Default value: ``false``|
-| showDivider          | ``boolean``                 | No  |   Determines whether the divider is shown or not. Default value:``true`` |
-| dividerStyle          | [``StyleProp<ViewStyle>``](https://reactnative.dev/docs/view-style-props)                 | No  |   Style of divider  |
-| dividerColor          | ``string``                 | No  |   Color of divider |
-| icons     | ``React.ReactElement<typeof ``    [``Icon>``](http://localhost:3000/docs/components/icon) []                           | No       | Icon list for header texts.       |
 | theme          | ``UITheme ``                                                              | No       | The theme to use for the component.                |
 | typography     | ``UITypography``                                                          | No       | The typography to use for the component.        |
 
