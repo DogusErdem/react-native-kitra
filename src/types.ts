@@ -107,7 +107,7 @@ export type AvatarGroupProps = {
     /**
         *Additional styles to apply to the limit container
     */
-    limitContainerStyle?: { style: StyleProp<TextStyle>, backgroundColor: string }
+    limitContainerStyle?: StyleProp<TextStyle>
     /**
         *The theme to use for the component
     */
@@ -226,9 +226,14 @@ export type ButtonProps = {
     */
     labelStyle?: StyleProp<TextStyle>,
     /**
+        *Determines what the opacity of the wrapped view should be when touch is active. Defaults to 1.
+    */
+        activeOpacity?:number,
+    /**
         *The theme to use for the component
     */
     theme?: DeepPartial<(ComponentThemeType['button'])>
+
 }
 
 export type CheckBoxProps = {
@@ -283,10 +288,6 @@ export type ChipProps = {
         *Additional element to apply to right side of the chip
     */
     right:(event:boolean)=> React.ReactElement,
-    /**
-        *The position of the icon in relation to the label. Defaults to 'right'
-    */
-    iconPosition?: 'left' | 'right',
     /**
         *The size of the chip. Defaults to 'small'
     */
@@ -661,10 +662,6 @@ export type TextInputProps = {
     */
     size?: 'large' | 'medium' | 'small',
     /**
-        *Location of the icon
-    */
-    iconPosition?: 'left' | 'right',
-    /**
         *Text to be displayed under the text input
     */
     bottomLabel?: string,
@@ -786,7 +783,6 @@ export type SpeedDialProps = {
 export type PagerViewProps = {
     ref: React.RefObject<FlatList>,
     children: React.ReactNode
-    customHeader?: React.ReactNode[]
     containerStyle?: StyleProp<ViewStyle>
     pageContainerStyle?: StyleProp<ViewStyle>
     headerSliderStyle?: StyleProp<ViewStyle>,

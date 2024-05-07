@@ -104,7 +104,6 @@ export const COLOR_COMPONENTS_LIGHT = (COLOR_SYSTEM:{colors:typeof COLOR_SYSTEM_
         collapseIconBackground: COLOR_SYSTEM.colors.system.primary5,
         collapseIcon: COLOR_SYSTEM.colors.neutral.lightBlack,
         itemLabel: COLOR_SYSTEM.colors.neutral.grey,
-        icon: COLOR_SYSTEM.colors.neutral.lightBlack,
       },
       active: {
         background: COLOR_SYSTEM.colors.system.primary5,
@@ -113,7 +112,6 @@ export const COLOR_COMPONENTS_LIGHT = (COLOR_SYSTEM:{colors:typeof COLOR_SYSTEM_
         collapseIconBackground: COLOR_SYSTEM.colors.system.primary15,
         collapseIcon: COLOR_SYSTEM.colors.system.primary,
         itemLabel: COLOR_SYSTEM.colors.neutral.grey,
-        icon: COLOR_SYSTEM.colors.system.primary,
       },
     },
     activityIndicator: {
@@ -147,17 +145,14 @@ export const COLOR_COMPONENTS_LIGHT = (COLOR_SYSTEM:{colors:typeof COLOR_SYSTEM_
       default: {
         background: COLOR_SYSTEM.colors.system.primary,
         label: COLOR_SYSTEM.colors.button.text,
-        icon: COLOR_SYSTEM.colors.button.text,
       },
       pressed: {
         background: COLOR_SYSTEM.colors.status.focused,
         label: COLOR_SYSTEM.colors.button.text,
-        icon: COLOR_SYSTEM.colors.button.text,
       },
       disabled: {
         background: COLOR_SYSTEM.colors.button.disabled,
         label: COLOR_SYSTEM.colors.button.disabledText,
-        icon: COLOR_SYSTEM.colors.button.disabledText,
       },
     },
     checkbox: {
@@ -181,19 +176,16 @@ export const COLOR_COMPONENTS_LIGHT = (COLOR_SYSTEM:{colors:typeof COLOR_SYSTEM_
       default: {
         background: COLOR_SYSTEM.colors.system.background,
         border: COLOR_SYSTEM.colors.system.primary,
-        icon: COLOR_SYSTEM.colors.system.primary,
         label: COLOR_SYSTEM.colors.system.primary,
       },
       active: {
         background: COLOR_SYSTEM.colors.system.primary,
         border: COLOR_SYSTEM.colors.system.primary,
-        icon: COLOR_SYSTEM.colors.button.text,
         label: COLOR_SYSTEM.colors.button.text,
       },
       disabled: {
         background: COLOR_SYSTEM.colors.system.background,
         border: COLOR_SYSTEM.colors.system.disabledDark,
-        icon: COLOR_SYSTEM.colors.system.disabledDark,
         label: COLOR_SYSTEM.colors.system.disabledDark,
       },
     },
@@ -410,7 +402,6 @@ export const COLOR_COMPONENTS_DARK = (COLOR_SYSTEM:{colors:typeof COLOR_SYSTEM_D
       collapseIconBackground: COLOR_SYSTEM.colors.system.primary5,
       collapseIcon: COLOR_SYSTEM.colors.neutral.lightBlack,
       itemLabel: COLOR_SYSTEM.colors.neutral.grey,
-      icon: COLOR_SYSTEM.colors.neutral.lightBlack,
     },
     active: {
       background: COLOR_SYSTEM.colors.system.primary5,
@@ -419,7 +410,6 @@ export const COLOR_COMPONENTS_DARK = (COLOR_SYSTEM:{colors:typeof COLOR_SYSTEM_D
       collapseIconBackground: COLOR_SYSTEM.colors.system.primary15,
       collapseIcon: COLOR_SYSTEM.colors.system.primary,
       itemLabel: COLOR_SYSTEM.colors.neutral.grey,
-      icon: COLOR_SYSTEM.colors.system.primary,
     },
   },
   activityIndicator: {
@@ -453,17 +443,14 @@ export const COLOR_COMPONENTS_DARK = (COLOR_SYSTEM:{colors:typeof COLOR_SYSTEM_D
     default: {
       background: COLOR_SYSTEM.colors.system.primary,
       label: COLOR_SYSTEM.colors.button.text,
-      icon: COLOR_SYSTEM.colors.button.text,
     },
     pressed: {
       background: COLOR_SYSTEM.colors.status.focused,
       label: COLOR_SYSTEM.colors.button.text,
-      icon: COLOR_SYSTEM.colors.button.text,
     },
     disabled: {
       background: COLOR_SYSTEM.colors.button.disabled,
       label: COLOR_SYSTEM.colors.button.disabledText,
-      icon: COLOR_SYSTEM.colors.button.disabledText,
     },
   },
   checkbox: {
@@ -487,19 +474,16 @@ export const COLOR_COMPONENTS_DARK = (COLOR_SYSTEM:{colors:typeof COLOR_SYSTEM_D
     default: {
       background: COLOR_SYSTEM.colors.system.background,
       border: COLOR_SYSTEM.colors.system.primary,
-      icon: COLOR_SYSTEM.colors.system.primary,
       label: COLOR_SYSTEM.colors.system.primary,
     },
     active: {
       background: COLOR_SYSTEM.colors.system.primary,
       border: COLOR_SYSTEM.colors.system.primary,
-      icon: COLOR_SYSTEM.colors.button.text,
       label: COLOR_SYSTEM.colors.button.text,
     },
     disabled: {
       background: COLOR_SYSTEM.colors.system.background,
       border: COLOR_SYSTEM.colors.system.disabledDark,
-      icon: COLOR_SYSTEM.colors.system.disabledDark,
       label: COLOR_SYSTEM.colors.system.disabledDark,
     },
   },

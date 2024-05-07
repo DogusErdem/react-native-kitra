@@ -14,6 +14,7 @@ export const Button: FCCWD<ButtonProps & PressableProps> = (
     left,
     right,
     theme,
+    activeOpacity = 1,
     ...props },
 ) => {
   const [isPressed, setIsPressed] = useState(false);
@@ -39,6 +40,7 @@ export const Button: FCCWD<ButtonProps & PressableProps> = (
             { padding: (fontStyles[size].lineHeight - fontStyles[size].fontSize) / 2 + 10 },
           style,
           { backgroundColor: statusTheme.background },
+          { opacity: pressed ? activeOpacity : 1 },
         ]}
       disabled={disabled}
       {...props}
@@ -46,7 +48,6 @@ export const Button: FCCWD<ButtonProps & PressableProps> = (
 
       {typeof left === 'function' && React.cloneElement(left(isPressed), {
         size: left(isPressed).props.size || fontStyles[size].fontSize,
-        color: statusTheme.icon || left(isPressed).props.color,
         style: [label.length ? { marginRight: 10 } : null, left(isPressed).props?.style],
       })}
       <Text
@@ -57,7 +58,6 @@ export const Button: FCCWD<ButtonProps & PressableProps> = (
       </Text>
       {typeof right === 'function' && React.cloneElement(right(isPressed), {
         size: right(isPressed).props.size || fontStyles[size].fontSize,
-        color: statusTheme.icon || right(isPressed).props.color,
         style: [label.length ? { marginLeft: 10 } : null, right(isPressed).props?.style],
       })}
     </Pressable>
@@ -68,7 +68,6 @@ export default applyDefaults(Button);
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
     flexDirection: 'row',
     borderRadius: 5,
     alignItems: 'center',
