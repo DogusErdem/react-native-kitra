@@ -283,11 +283,11 @@ export type ChipProps = {
     /**
         *Additional element to apply to left side of the chip
     */
-    left:(event:boolean)=> React.ReactElement,
+    left?:(event:boolean)=> React.ReactElement,
     /**
         *Additional element to apply to right side of the chip
     */
-    right:(event:boolean)=> React.ReactElement,
+    right?:(event:boolean)=> React.ReactElement,
     /**
         *The size of the chip. Defaults to 'small'
     */
@@ -295,7 +295,7 @@ export type ChipProps = {
     /**
         *Callback function to be called when the value of a chip component changes
     */
-    onChange: (event: boolean) => void,
+    onChange?: (event: boolean) => void,
     /**
         *Whether the press behavior is disabled
     */
@@ -326,6 +326,10 @@ export type DividerProps = {
 }
 
 export type DrowdownProps = {
+    /**
+        *The size of the dropdown. Defaults to 'medium'
+    */
+        size?: 'large' | 'medium' | 'small',
     /**
         *Whether to include a "Select All" option in the dropdown. Defaults to false
     */
