@@ -1,6 +1,6 @@
 {
   "name": "@tra-tech/react-native-kitra",
-  "version": "2.0.0-rc.5",
+  "version": "2.0.0-rc.6",
   "description": "UI kit for React Native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -126,7 +126,7 @@
   "dependencies": {
     "expo-linear-gradient": "^12.3.0",
     "lodash.merge": "^4.6.2",
-    "react-native-vector-icons": "^9.2.0"
+    "react-native-vector-icons": "^10.1.0"
   },
   "jest": {
     "preset": "react-native",
