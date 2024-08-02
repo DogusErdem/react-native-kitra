@@ -23,7 +23,6 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
     displayedRowValue,
     displayedButtonValue,
     listContainerStyle,
-    defaultValue = [],
     displayLength = 4,
     buttonTitle,
     rowStyle,
@@ -37,22 +36,23 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
     disabled,
     testID,
     theme,
+    defaultValue = [],
     size = 'medium',
     completeButtonLabelStyle,
     completeButtonLabel },
 ) => {
   const [visible, setVisible] = useState(false);
-  const [selectedObjects, setSelectedObjects] = useState(defaultValue || []);
+  const [selectedObjects, setSelectedObjects] = useState(defaultValue);
   const [cord, setCord] = useState({ x: 0, y: 0, height: 0, width: 0 });
   const openAnimation = useSharedValue(0);
   const dataWithID = useRef();
   const { statusTheme, componentTheme } = useComponentTheme(
     theme,
     'multipleDropdown',
-    selectedObjects.length ? 'selected' : (disabled ? 'disabled' : (visible ? 'active' : 'default')),
+    disabled ? 'disabled' : (Object.keys(selectedObjects).length ? 'selected' : (visible ? 'active' : 'default')),
   );
 
-  const componenetStatus = disabled ? 'disabled' : (visible ? 'active' : 'default');
+  const componentStatus = disabled ? 'disabled' : (visible ? 'active' : 'default');
   const dropdown = useRef<TouchableOpacity>(null);
   const dropdownAnimation = useAnimatedStyle(() => ({
     transform: [{ rotate: `${openAnimation.value * 180}deg` }],
@@ -82,7 +82,10 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
 
   const toggleCheckBox = (value: string | { [key: string]: any; }) => {
     const selectedObjectsTemp = [...selectedObjects];
-    const valueIndex = selectedObjectsTemp.indexOf(value);
+
+    const valueIndex = selectedObjectsTemp.findIndex(obj => displayedRowValue(obj) === displayedRowValue(value));
+    console.log(valueIndex);
+
     if (valueIndex > -1) {
       selectedObjectsTemp.splice(valueIndex, 1);
     } else {
@@ -117,6 +120,12 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
      (string | { keyID: number, [key: string]: any }) => { x.keyID = Math.random(); return (x); });
   }, [data]);
 
+  useEffect(() => {
+    if (defaultValue.length > 0) {
+      setSelectedObjects(defaultValue);
+    }
+  }, []);
+
   return (
     <View testID={testID} style={[containerStyle, { zIndex: visible ? 1000 : 0 }]}>
       <TouchableOpacity
@@ -126,11 +135,13 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
         disabled={disabled}
         onPress={() => { setVisible(!visible); }}
         style={[Style.button,
-          { borderWidth: disabled ? 0 : 1, height: sizes[size].buttonHeight },
+          { borderWidth: 1, height: sizes[size].buttonHeight },
           buttonStyle,
           {
-            backgroundColor: componentTheme[isObjectSelected ? 'selected' : componenetStatus]?.background,
-            borderColor: componentTheme[isObjectSelected ? 'selected' : componenetStatus]?.border,
+            backgroundColor: componentTheme[disabled ?
+              componentStatus : isObjectSelected ? 'selected' : componentStatus]?.background,
+            borderColor: componentTheme[disabled ?
+              componentStatus : isObjectSelected ? 'selected' : componentStatus]?.border,
           }]}
       >
         {leftElement && (
@@ -145,7 +156,8 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
             buttonTextStyle,
             { flex: 1,
               marginLeft: 12,
-              color: componentTheme[isObjectSelected ? 'selected' : componenetStatus]?.label }]}
+              color: componentTheme[disabled ?
+                componentStatus : isObjectSelected ? 'selected' : componentStatus]?.label }]}
         >
           {!isObjectSelected ?
             (buttonTitle || 'Please Select')
@@ -179,6 +191,8 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
               maxHeight: selectall ? sizes[size].rowHeight * 6.5 : sizes[size].rowHeight * 6,
             },
             listContainerStyle,
+
+            // eslint-disable-next-line no-unsafe-optional-chaining
             (cord?.y + (sizes[size].rowHeight * 6.5) || 0) >= windowsHeight ?
               { bottom: cord?.height || 0 } : { top: 0 },
             { backgroundColor: statusTheme.collapseBackground }]}
@@ -201,20 +215,20 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
                       : null,
                     rowStyle,
                     {
-                      backgroundColor: componentTheme[isSelected ? 'selected' : componenetStatus]?.background,
+                      backgroundColor: componentTheme[isSelected ? 'selected' : componentStatus]?.background,
                     },
                   ]}
                 >
                   <TouchableOpacity
                     disabled
                     style={[Style.checkBox, {
-                      borderColor: componentTheme[isSelected ? 'selected' : componenetStatus]?.checkBorder,
-                      backgroundColor: componentTheme[isSelected ? 'selected' : componenetStatus]?.checkBackground,
+                      borderColor: componentTheme[isSelected ? 'selected' : componentStatus]?.checkBorder,
+                      backgroundColor: componentTheme[isSelected ? 'selected' : componentStatus]?.checkBackground,
                     }]}
                   >
                     {isSelected && (
                     <OcticonsIcon
-                      color={componentTheme[isSelected ? 'selected' : componenetStatus]?.checkIcon}
+                      color={componentTheme[isSelected ? 'selected' : componentStatus]?.checkIcon}
                       name="check"
                       size={12}
                     />
@@ -223,7 +237,7 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
                   <Text
                     style={[sizes[size].typography,
                       { marginHorizontal: 10 },
-                      rowTextStyle, { color: componentTheme[isSelected ? 'selected' : componenetStatus]?.itemLabel }]}
+                      rowTextStyle, { color: componentTheme[isSelected ? 'selected' : componentStatus]?.itemLabel }]}
                   >
                     {displayedRowValue?.(item)}
                   </Text>

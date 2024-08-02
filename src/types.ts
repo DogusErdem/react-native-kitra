@@ -381,7 +381,7 @@ export type DrowdownProps = {
     /**
         *Default value to be pre-selected in the dropdown
     */
-    defaultValue?: any,
+        defaultValue?: any,
     /**
         *Additional styles to apply to the text inside each item in the dropdown
     */
