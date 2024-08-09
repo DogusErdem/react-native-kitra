@@ -43,6 +43,7 @@ export const Button: FCCWD<ButtonProps & PressableProps> = (
     <Pressable
       onPressIn={() => setIsPressed(true)}
       onPressOut={() => setIsPressed(false)}
+      testID="pressable"
       style={({ pressed }) =>
         [
           styles.container,
@@ -64,7 +65,7 @@ export const Button: FCCWD<ButtonProps & PressableProps> = (
         style: [label.length ? { marginRight: 10 } : null, left(isPressed).props?.style],
       })}
       <Text
-        testID="button_text"
+        testID="buttonLabel"
         style={[{ fontWeight: '500' }, fontStyles[size], labelStyle, { color: statusTheme.label }]}
       >
         {label}

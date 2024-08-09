@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar default render 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    onLayout={[Function]}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "height": 2,
+          "justifyContent": "center",
+          "overflow": "visible",
+          "width": "100%",
+        },
+        undefined,
+        {
+          "backgroundColor": "#E6EEFF",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "width": 0,
+          },
+          {
+            "borderRadius": 14,
+            "height": 4,
+            "position": "absolute",
+          },
+          undefined,
+          {
+            "backgroundColor": "#195CEF",
+          },
+        ]
+      }
+      testID="progressBarAnimation"
+    />
+  </View>
+</View>
+`;

@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chip default render 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "alignSelf": "baseline",
+        "backgroundColor": undefined,
+        "borderColor": "#195CEF",
+        "borderRadius": 30,
+        "borderWidth": 1,
+        "height": 24,
+        "justifyContent": "center",
+        "opacity": 1,
+      }
+    }
+    testID="chip"
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "fontSize": 10,
+              "fontWeight": "500",
+              "lineHeight": 16,
+              "marginLeft": 15,
+              "marginRight": 15,
+            },
+            undefined,
+            {
+              "color": "#195CEF",
+            },
+          ]
+        }
+        testID="chipLabel"
+      >
+        Test
+      </Text>
+    </View>
+  </View>
+</View>
+`;

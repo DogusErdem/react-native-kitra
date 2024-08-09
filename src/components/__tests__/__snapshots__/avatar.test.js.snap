@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar renders default 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "borderRadius": 10,
+          "height": 30,
+          "justifyContent": "center",
+          "width": 30,
+        },
+        undefined,
+        {
+          "backgroundColor": "#E6EEFF",
+        },
+      ]
+    }
+    testID="avatarContainer"
+  >
+    <Image
+      resizeMethod="auto"
+      source={
+        {
+          "uri": "https://docs.teraportfoy.com/test-images/sliders/slider_1.jpg",
+        }
+      }
+      style={
+        [
+          {
+            "borderRadius": 10,
+            "height": 30,
+            "width": 30,
+          },
+        ]
+      }
+      testID="avatarImage"
+    />
+  </View>
+</View>
+`;

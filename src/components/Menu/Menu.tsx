@@ -52,9 +52,9 @@ const Menu: FCCWD<MenuProps> = (
   };
 
   return (
-    <View style={[styles.container, containerStyle]} ref={menu}>
+    <View testID="menuContainer" style={[styles.container, containerStyle]} ref={menu}>
       <TouchableOpacity
-        testID="open_button"
+        testID="openButton"
         onPress={pressButton}
         style={styles.openButton}
       >
@@ -62,7 +62,7 @@ const Menu: FCCWD<MenuProps> = (
       </TouchableOpacity>
       {open ? (
         <View
-          testID="menu_container"
+          testID="itemsContainer"
           onLayout={e => setMenuHeight({ height: e.nativeEvent.layout.height })}
           style={[
             styles.menuContainer,
@@ -77,23 +77,25 @@ const Menu: FCCWD<MenuProps> = (
             exiting={FadeOut}
           >
             {items?.map((item, index) => (
-              <View key={index} style={rowStyle}>
+              <View testID={`listContainer${index}`} key={index} style={rowStyle}>
                 <TouchableOpacity
-                  testID={`item_button_${index}`}
+                  testID={`itemButton${index}`}
                   onPress={() => { item.onPress && item.onPress(); closeMenu(); }}
                   style={styles.menuButton}
                 >
                   {item.left && item.left}
                   <View style={styles.buttonContainer}>
-                    <Text style={[
-                      {
-                        fontSize: typography?.body.smedium.fontSize,
-                        fontWeight: '500',
-                        lineHeight: typography?.body.smedium.lineHeight,
-                        paddingHorizontal: item.left ? 5 : 0,
-                      }, rowTextStyle, {
-                        color: statusTheme.itemLabel,
-                      }]}
+                    <Text
+                      testID={`itemLabel${index}`}
+                      style={[
+                        {
+                          fontSize: typography?.body.smedium.fontSize,
+                          fontWeight: '500',
+                          lineHeight: typography?.body.smedium.lineHeight,
+                          paddingHorizontal: item.left ? 5 : 0,
+                        }, rowTextStyle, {
+                          color: statusTheme.itemLabel,
+                        }]}
                     >
                       {item.label}
                     </Text>

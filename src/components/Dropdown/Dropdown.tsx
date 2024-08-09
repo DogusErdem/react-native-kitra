@@ -6,6 +6,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 import useComponentTheme from '../../core/hooks/useComponentTheme';
 import type { DrowdownProps, FCCWD } from '../../types';
 import FeatherIcon from '../Icons/Feather';
+import Icon from '../Icons/Icon';
 
 const windowsHeight = Dimensions.get('window').height;
 
@@ -89,6 +90,7 @@ const Dropdown: FCCWD<DrowdownProps> = (
   return (
     <View testID={testID} style={[containerStyle, { zIndex: visible ? 1000 : 0 }]}>
       <TouchableOpacity
+        testID="dropdownButton"
         ref={dropdown}
         activeOpacity={0.9}
         disabled={disabled}
@@ -106,6 +108,7 @@ const Dropdown: FCCWD<DrowdownProps> = (
         <Text
           numberOfLines={1}
           key={displayedButtonValue?.(selectedObject)}
+          testID="dropdownButtonLabel"
           style={[
             {
               flex: 1,
@@ -121,7 +124,9 @@ const Dropdown: FCCWD<DrowdownProps> = (
         <View style={[Style.rightItem]}>
           {rightElement || (
           <Animated.View style={dropdownAnimation}>
-            <FeatherIcon
+            <Icon
+              type="feather"
+              testID="dropwdownButtonIcon"
               name="chevron-down"
               size={14}
               color={statusTheme.collapseIcon}
@@ -136,22 +141,25 @@ const Dropdown: FCCWD<DrowdownProps> = (
           entering={FadeIn.duration(300)}
           exiting={FadeOut}
         >
-          <View style={[Style.listContainer,
-            {
-              width: cord?.width,
-              left: 0,
-            },
-            { maxHeight: sizes[size].rowHeight * 4.5 },
-            listContainerStyle,
-            autoPosition ?
-              (cord?.y + (sizes[size].rowHeight * 4.5) + 10 + sizes[size].buttonHeight || 0) >= windowsHeight ?
-                { bottom: cord?.height } : { top: 0 }
-              : { top: cord?.height + 5 },
-            { backgroundColor: statusTheme.collapseBackground }]}
+          <View
+            testID="dropdownListContainer"
+            style={[Style.listContainer,
+              {
+                width: cord?.width,
+                left: 0,
+              },
+              { maxHeight: sizes[size].rowHeight * 4.5 },
+              listContainerStyle,
+              autoPosition ?
+                (cord?.y + (sizes[size].rowHeight * 4.5) + 10 + sizes[size].buttonHeight || 0) >= windowsHeight ?
+                  { bottom: cord?.height } : { top: 0 }
+                : { top: cord?.height + 5 },
+              { backgroundColor: statusTheme.collapseBackground }]}
           >
             <ScrollView nestedScrollEnabled>
               {data?.map((x, index) => (
                 <TouchableOpacity
+                  testID={`itemButton${index}`}
                   activeOpacity={0.8}
                   key={index}
                   onPress={() => {
@@ -170,8 +178,10 @@ const Dropdown: FCCWD<DrowdownProps> = (
                     },
                   ]}
                 >
-                  <Text style={[sizes[size].typography, { marginVertical: 10, marginHorizontal: 10 }, rowTextStyle,
-                    { color: componentTheme[isSelectedObject(x) ? 'selected' : componentStatus]?.itemLabel }]}
+                  <Text
+                    testID={`itemButtonLabel${index}`}
+                    style={[sizes[size].typography, { marginVertical: 10, marginHorizontal: 10 }, rowTextStyle,
+                      { color: componentTheme[isSelectedObject(x) ? 'selected' : componentStatus]?.itemLabel }]}
                   >
                     {displayedRowValue?.(x)}
                   </Text>

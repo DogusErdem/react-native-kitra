@@ -54,13 +54,22 @@ const AccordionList: FCCWD<AccordionListProps> = ({
   return (
     <View style={containerStyle}>
       <TouchableOpacity activeOpacity={0.8} onPress={handleListOpen} testID={testID}>
-        <View style={[styles.labelContianer, labelContainerStyle, { backgroundColor: statusTheme.background }]}>
+        <View
+          testID="labelContainerTestID"
+          style={[styles.labelContianer, labelContainerStyle, { backgroundColor: statusTheme.background }]}
+        >
           {typeof left === 'function' && left?.(expanded)}
-          <Text style={[typography?.body.medium, styles.labelText, labelStyle, { color: statusTheme.label }]}>
+          <Text
+            testID="labelTestID"
+            style={[typography?.body.medium, styles.labelText, labelStyle, { color: statusTheme.label }]}
+          >
             {label}
           </Text>
           {typeof right === 'function' && right?.(expanded)}
-          <View style={[styles.iconContainer, { backgroundColor: statusTheme.collapseIconBackground }]}>
+          <View
+            testID="collapseIconContainerTestID"
+            style={[styles.iconContainer, { backgroundColor: statusTheme.collapseIconBackground }]}
+          >
             <AnimatedIcon
               color={statusTheme.collapseIcon}
               name="chevron-down"
@@ -80,10 +89,13 @@ const AccordionList: FCCWD<AccordionListProps> = ({
               <Animated.View
                 entering={FadeInUp}
                 exiting={FadeOut}
+                testID="rowLabelContainerTestID"
                 style={[styles.itemContainer, rowStyle, { backgroundColor: statusTheme.itemBackground }]}
               >
-                <Text style={[{ textAlign: 'center' },
-                  typography?.body.smedium, rowTextStyle, { color: statusTheme.itemLabel }]}
+                <Text
+                  testID="rowLabelTestID"
+                  style={[{ textAlign: 'center' },
+                    typography?.body.smedium, rowTextStyle, { color: statusTheme.itemLabel }]}
                 >
                   {itemDisplay?.(item)}
                 </Text>

@@ -7,11 +7,11 @@ type IconProps = {
     type: IconType,
 } & IconComponentProps;
 
-const Icon:FCCWD<IconProps> = ({ type, ...props }) => {
+const Icon:FCCWD<IconProps> = ({ testID, type, ...props }) => {
   const IconComponent = getIconType(type || 'ionicons');
 
   return (
-    <IconComponent {...props} />
+    <IconComponent testID={testID} {...props} />
   );
 };
 

@@ -48,6 +48,10 @@ const ProgressBar: FCCWD<ProgressBarProps> = (
 export default applyDefaults(ProgressBar);
 
 export const Style = StyleSheet.create({
-  container: { backgroundColor: 'transparent', height: 2, width: '100%', overflow: 'visible', justifyContent: 'center' },
+  container: { backgroundColor: 'transparent',
+    height: 2,
+    width: '100%',
+    overflow: 'visible',
+    justifyContent: 'center' },
   progressStyle: { borderRadius: 14, position: 'absolute', height: 4 },
 });

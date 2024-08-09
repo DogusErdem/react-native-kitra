@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActiviyIndicator renders avtivity indicator 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "flex": 1,
+          "height": "100%",
+          "justifyContent": "center",
+          "width": "100%",
+          "zIndex": 100,
+        },
+        {
+          "backgroundColor": "rgba(246,249,255,0.8)",
+        },
+      ]
+    }
+    testID="container"
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderRadius": 20,
+            "height": 150,
+            "justifyContent": "center",
+            "width": 150,
+          },
+        ]
+      }
+    >
+      <ActivityIndicator
+        color="#195CEF"
+        size="large"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`ActiviyIndicator renders avtivity indicator with children 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "flex": 1,
+          "height": "100%",
+          "justifyContent": "center",
+          "width": "100%",
+          "zIndex": 100,
+        },
+        {
+          "backgroundColor": "rgba(246,249,255,0.8)",
+        },
+      ]
+    }
+    testID="container"
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderRadius": 20,
+            "height": 150,
+            "justifyContent": "center",
+            "width": 150,
+          },
+        ]
+      }
+    >
+      <Text>
+        TEST
+      </Text>
+    </View>
+  </View>
+</View>
+`;

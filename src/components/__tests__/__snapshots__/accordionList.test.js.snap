@@ -1,0 +1,1969 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccordionList renders with different data types renders default 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderRadius": 3,
+              "flexDirection": "row",
+              "padding": 10,
+            },
+            undefined,
+            {
+              "backgroundColor": "#EFF0F3",
+            },
+          ]
+        }
+        testID="labelContainerTestID"
+      >
+        <Text
+          style={
+            [
+              {
+                "fontFamily": "Poppins-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              },
+              {
+                "flex": 1,
+                "marginHorizontal": 10,
+                "textAlign": "left",
+              },
+              undefined,
+              {
+                "color": "#404040",
+              },
+            ]
+          }
+          testID="labelTestID"
+        >
+          title
+        </Text>
+        <View
+          style={
+            [
+              {
+                "borderRadius": 3,
+                "paddingHorizontal": 10,
+                "paddingVertical": 6,
+              },
+              {
+                "backgroundColor": "#F6F9FF",
+              },
+            ]
+          }
+          testID="collapseIconContainerTestID"
+        >
+          <Text
+            accessibilityElementsHidden={true}
+            allowFontScaling={false}
+            importantForAccessibility="no-hide-descendants"
+            pointerEvents="none"
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#404040",
+                  "fontSize": 20,
+                },
+                [
+                  {
+                    "lineHeight": 20,
+                  },
+                  {
+                    "backgroundColor": "transparent",
+                  },
+                  {
+                    "transform": [
+                      {
+                        "rotateZ": "0deg",
+                      },
+                    ],
+                  },
+                ],
+                {
+                  "fontFamily": "Octicons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {},
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "height": 0,
+          },
+          {
+            "overflow": "hidden",
+          },
+        ]
+      }
+    >
+      <RCTScrollView
+        bounces={false}
+        data={
+          [
+            {
+              "content": "content1",
+              "title": "title1",
+            },
+            {
+              "content": "content2",
+              "title": "title2",
+            },
+            {
+              "content": "content3",
+              "title": "title3",
+            },
+          ]
+        }
+        getItem={[Function]}
+        getItemCount={[Function]}
+        keyExtractor={[Function]}
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onMomentumScrollBegin={[Function]}
+        onMomentumScrollEnd={[Function]}
+        onScroll={[Function]}
+        onScrollBeginDrag={[Function]}
+        onScrollEndDrag={[Function]}
+        removeClippedSubviews={false}
+        renderItem={[Function]}
+        scrollEventThrottle={50}
+        stickyHeaderIndices={[]}
+        viewabilityConfigCallbackPairs={[]}
+      >
+        <View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                entering={BaseAnimationMock {}}
+                exiting={BaseAnimationMock {}}
+                style={
+                  [
+                    {
+                      "padding": 10,
+                    },
+                    undefined,
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+                testID="rowLabelContainerTestID"
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "textAlign": "center",
+                      },
+                      {
+                        "fontFamily": "Poppins-Medium",
+                        "fontSize": 12,
+                        "lineHeight": 18,
+                      },
+                      undefined,
+                      {
+                        "color": "#9A9A9A",
+                      },
+                    ]
+                  }
+                  testID="rowLabelTestID"
+                >
+                  title1
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                entering={BaseAnimationMock {}}
+                exiting={BaseAnimationMock {}}
+                style={
+                  [
+                    {
+                      "padding": 10,
+                    },
+                    undefined,
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+                testID="rowLabelContainerTestID"
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "textAlign": "center",
+                      },
+                      {
+                        "fontFamily": "Poppins-Medium",
+                        "fontSize": 12,
+                        "lineHeight": 18,
+                      },
+                      undefined,
+                      {
+                        "color": "#9A9A9A",
+                      },
+                    ]
+                  }
+                  testID="rowLabelTestID"
+                >
+                  title2
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                entering={BaseAnimationMock {}}
+                exiting={BaseAnimationMock {}}
+                style={
+                  [
+                    {
+                      "padding": 10,
+                    },
+                    undefined,
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+                testID="rowLabelContainerTestID"
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "textAlign": "center",
+                      },
+                      {
+                        "fontFamily": "Poppins-Medium",
+                        "fontSize": 12,
+                        "lineHeight": 18,
+                      },
+                      undefined,
+                      {
+                        "color": "#9A9A9A",
+                      },
+                    ]
+                  }
+                  testID="rowLabelTestID"
+                >
+                  title3
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`AccordionList renders with different data types renders with string array data 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderRadius": 3,
+              "flexDirection": "row",
+              "padding": 10,
+            },
+            undefined,
+            {
+              "backgroundColor": "#EFF0F3",
+            },
+          ]
+        }
+        testID="labelContainerTestID"
+      >
+        <Text
+          style={
+            [
+              {
+                "fontFamily": "Poppins-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              },
+              {
+                "flex": 1,
+                "marginHorizontal": 10,
+                "textAlign": "left",
+              },
+              undefined,
+              {
+                "color": "#404040",
+              },
+            ]
+          }
+          testID="labelTestID"
+        >
+          title
+        </Text>
+        <View
+          style={
+            [
+              {
+                "borderRadius": 3,
+                "paddingHorizontal": 10,
+                "paddingVertical": 6,
+              },
+              {
+                "backgroundColor": "#F6F9FF",
+              },
+            ]
+          }
+          testID="collapseIconContainerTestID"
+        >
+          <Text
+            accessibilityElementsHidden={true}
+            allowFontScaling={false}
+            importantForAccessibility="no-hide-descendants"
+            pointerEvents="none"
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#404040",
+                  "fontSize": 20,
+                },
+                [
+                  {
+                    "lineHeight": 20,
+                  },
+                  {
+                    "backgroundColor": "transparent",
+                  },
+                  {
+                    "transform": [
+                      {
+                        "rotateZ": "0deg",
+                      },
+                    ],
+                  },
+                ],
+                {
+                  "fontFamily": "Octicons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {},
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "height": 0,
+          },
+          {
+            "overflow": "hidden",
+          },
+        ]
+      }
+    >
+      <RCTScrollView
+        bounces={false}
+        data={
+          [
+            "title1",
+            "title2",
+            "title3",
+          ]
+        }
+        getItem={[Function]}
+        getItemCount={[Function]}
+        keyExtractor={[Function]}
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onMomentumScrollBegin={[Function]}
+        onMomentumScrollEnd={[Function]}
+        onScroll={[Function]}
+        onScrollBeginDrag={[Function]}
+        onScrollEndDrag={[Function]}
+        removeClippedSubviews={false}
+        renderItem={[Function]}
+        scrollEventThrottle={50}
+        stickyHeaderIndices={[]}
+        viewabilityConfigCallbackPairs={[]}
+      >
+        <View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                entering={BaseAnimationMock {}}
+                exiting={BaseAnimationMock {}}
+                style={
+                  [
+                    {
+                      "padding": 10,
+                    },
+                    undefined,
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+                testID="rowLabelContainerTestID"
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "textAlign": "center",
+                      },
+                      {
+                        "fontFamily": "Poppins-Medium",
+                        "fontSize": 12,
+                        "lineHeight": 18,
+                      },
+                      undefined,
+                      {
+                        "color": "#9A9A9A",
+                      },
+                    ]
+                  }
+                  testID="rowLabelTestID"
+                />
+              </View>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                entering={BaseAnimationMock {}}
+                exiting={BaseAnimationMock {}}
+                style={
+                  [
+                    {
+                      "padding": 10,
+                    },
+                    undefined,
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+                testID="rowLabelContainerTestID"
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "textAlign": "center",
+                      },
+                      {
+                        "fontFamily": "Poppins-Medium",
+                        "fontSize": 12,
+                        "lineHeight": 18,
+                      },
+                      undefined,
+                      {
+                        "color": "#9A9A9A",
+                      },
+                    ]
+                  }
+                  testID="rowLabelTestID"
+                />
+              </View>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                entering={BaseAnimationMock {}}
+                exiting={BaseAnimationMock {}}
+                style={
+                  [
+                    {
+                      "padding": 10,
+                    },
+                    undefined,
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+                testID="rowLabelContainerTestID"
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "textAlign": "center",
+                      },
+                      {
+                        "fontFamily": "Poppins-Medium",
+                        "fontSize": 12,
+                        "lineHeight": 18,
+                      },
+                      undefined,
+                      {
+                        "color": "#9A9A9A",
+                      },
+                    ]
+                  }
+                  testID="rowLabelTestID"
+                />
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`AccordionList renders with different styles renders with default style 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderRadius": 3,
+              "flexDirection": "row",
+              "padding": 10,
+            },
+            undefined,
+            {
+              "backgroundColor": "#EFF0F3",
+            },
+          ]
+        }
+        testID="labelContainerTestID"
+      >
+        <Text
+          style={
+            [
+              {
+                "fontFamily": "Poppins-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              },
+              {
+                "flex": 1,
+                "marginHorizontal": 10,
+                "textAlign": "left",
+              },
+              undefined,
+              {
+                "color": "#404040",
+              },
+            ]
+          }
+          testID="labelTestID"
+        >
+          title
+        </Text>
+        <View
+          style={
+            [
+              {
+                "borderRadius": 3,
+                "paddingHorizontal": 10,
+                "paddingVertical": 6,
+              },
+              {
+                "backgroundColor": "#F6F9FF",
+              },
+            ]
+          }
+          testID="collapseIconContainerTestID"
+        >
+          <Text
+            accessibilityElementsHidden={true}
+            allowFontScaling={false}
+            importantForAccessibility="no-hide-descendants"
+            pointerEvents="none"
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#404040",
+                  "fontSize": 20,
+                },
+                [
+                  {
+                    "lineHeight": 20,
+                  },
+                  {
+                    "backgroundColor": "transparent",
+                  },
+                  {
+                    "transform": [
+                      {
+                        "rotateZ": "0deg",
+                      },
+                    ],
+                  },
+                ],
+                {
+                  "fontFamily": "Octicons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {},
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "height": 0,
+          },
+          {
+            "overflow": "hidden",
+          },
+        ]
+      }
+    >
+      <RCTScrollView
+        bounces={false}
+        data={
+          [
+            {
+              "content": "content1",
+              "title": "title1",
+            },
+            {
+              "content": "content2",
+              "title": "title2",
+            },
+            {
+              "content": "content3",
+              "title": "title3",
+            },
+          ]
+        }
+        getItem={[Function]}
+        getItemCount={[Function]}
+        keyExtractor={[Function]}
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onMomentumScrollBegin={[Function]}
+        onMomentumScrollEnd={[Function]}
+        onScroll={[Function]}
+        onScrollBeginDrag={[Function]}
+        onScrollEndDrag={[Function]}
+        removeClippedSubviews={false}
+        renderItem={[Function]}
+        scrollEventThrottle={50}
+        stickyHeaderIndices={[]}
+        viewabilityConfigCallbackPairs={[]}
+      >
+        <View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                entering={BaseAnimationMock {}}
+                exiting={BaseAnimationMock {}}
+                style={
+                  [
+                    {
+                      "padding": 10,
+                    },
+                    undefined,
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+                testID="rowLabelContainerTestID"
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "textAlign": "center",
+                      },
+                      {
+                        "fontFamily": "Poppins-Medium",
+                        "fontSize": 12,
+                        "lineHeight": 18,
+                      },
+                      undefined,
+                      {
+                        "color": "#9A9A9A",
+                      },
+                    ]
+                  }
+                  testID="rowLabelTestID"
+                >
+                  title1
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                entering={BaseAnimationMock {}}
+                exiting={BaseAnimationMock {}}
+                style={
+                  [
+                    {
+                      "padding": 10,
+                    },
+                    undefined,
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+                testID="rowLabelContainerTestID"
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "textAlign": "center",
+                      },
+                      {
+                        "fontFamily": "Poppins-Medium",
+                        "fontSize": 12,
+                        "lineHeight": 18,
+                      },
+                      undefined,
+                      {
+                        "color": "#9A9A9A",
+                      },
+                    ]
+                  }
+                  testID="rowLabelTestID"
+                >
+                  title2
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                entering={BaseAnimationMock {}}
+                exiting={BaseAnimationMock {}}
+                style={
+                  [
+                    {
+                      "padding": 10,
+                    },
+                    undefined,
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+                testID="rowLabelContainerTestID"
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "textAlign": "center",
+                      },
+                      {
+                        "fontFamily": "Poppins-Medium",
+                        "fontSize": 12,
+                        "lineHeight": 18,
+                      },
+                      undefined,
+                      {
+                        "color": "#9A9A9A",
+                      },
+                    ]
+                  }
+                  testID="rowLabelTestID"
+                >
+                  title3
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`AccordionList renders with icons renders with left icon prop 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderRadius": 3,
+              "flexDirection": "row",
+              "padding": 10,
+            },
+            undefined,
+            {
+              "backgroundColor": "#EFF0F3",
+            },
+          ]
+        }
+        testID="labelContainerTestID"
+      >
+        <Text
+          allowFontScaling={false}
+          selectable={false}
+          style={
+            [
+              {
+                "color": "dimgrey",
+                "fontSize": 24,
+              },
+              undefined,
+              {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              {},
+            ]
+          }
+          typography={
+            {
+              "body": {
+                "medium": {
+                  "fontFamily": "Poppins-Medium",
+                  "fontSize": 14,
+                  "lineHeight": 21,
+                },
+                "regular": {
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 14,
+                  "lineHeight": 16,
+                },
+                "smedium": {
+                  "fontFamily": "Poppins-Medium",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                },
+                "sregular": {
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 12,
+                  "lineHeight": 16,
+                },
+                "xsmedium": {
+                  "fontFamily": "Poppins-Medium",
+                  "fontSize": 10,
+                  "lineHeight": 16,
+                },
+                "xsregular": {
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 10,
+                  "lineHeight": 14,
+                },
+                "xxsmedium": {
+                  "fontFamily": "Poppins-Medium",
+                  "fontSize": 8,
+                  "lineHeight": 12,
+                },
+                "xxsregular": {
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 8,
+                  "lineHeight": 12,
+                },
+              },
+              "heading": {
+                "h1": {
+                  "fontFamily": "Poppins-Medium",
+                  "fontSize": 30,
+                  "lineHeight": 45,
+                },
+                "h2": {
+                  "fontFamily": "Poppins-Medium",
+                  "fontSize": 28,
+                  "lineHeight": 42,
+                },
+                "h3": {
+                  "fontFamily": "Poppins-Medium",
+                  "fontSize": 23,
+                  "lineHeight": 35,
+                },
+                "h4": {
+                  "fontFamily": "Poppins-Medium",
+                  "fontSize": 19,
+                  "lineHeight": 29,
+                },
+                "h5": {
+                  "fontFamily": "Poppins-Medium",
+                  "fontSize": 16,
+                  "lineHeight": 25,
+                },
+              },
+            }
+          }
+        >
+          󰧱
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "fontFamily": "Poppins-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              },
+              {
+                "flex": 1,
+                "marginHorizontal": 10,
+                "textAlign": "left",
+              },
+              undefined,
+              {
+                "color": "#404040",
+              },
+            ]
+          }
+          testID="labelTestID"
+        >
+          title
+        </Text>
+        <View
+          style={
+            [
+              {
+                "borderRadius": 3,
+                "paddingHorizontal": 10,
+                "paddingVertical": 6,
+              },
+              {
+                "backgroundColor": "#F6F9FF",
+              },
+            ]
+          }
+          testID="collapseIconContainerTestID"
+        >
+          <Text
+            accessibilityElementsHidden={true}
+            allowFontScaling={false}
+            importantForAccessibility="no-hide-descendants"
+            pointerEvents="none"
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#404040",
+                  "fontSize": 20,
+                },
+                [
+                  {
+                    "lineHeight": 20,
+                  },
+                  {
+                    "backgroundColor": "transparent",
+                  },
+                  {
+                    "transform": [
+                      {
+                        "rotateZ": "0deg",
+                      },
+                    ],
+                  },
+                ],
+                {
+                  "fontFamily": "Octicons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {},
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "height": 0,
+          },
+          {
+            "overflow": "hidden",
+          },
+        ]
+      }
+    >
+      <RCTScrollView
+        bounces={false}
+        data={
+          [
+            {
+              "content": "content1",
+              "title": "title1",
+            },
+            {
+              "content": "content2",
+              "title": "title2",
+            },
+            {
+              "content": "content3",
+              "title": "title3",
+            },
+          ]
+        }
+        getItem={[Function]}
+        getItemCount={[Function]}
+        keyExtractor={[Function]}
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onMomentumScrollBegin={[Function]}
+        onMomentumScrollEnd={[Function]}
+        onScroll={[Function]}
+        onScrollBeginDrag={[Function]}
+        onScrollEndDrag={[Function]}
+        removeClippedSubviews={false}
+        renderItem={[Function]}
+        scrollEventThrottle={50}
+        stickyHeaderIndices={[]}
+        viewabilityConfigCallbackPairs={[]}
+      >
+        <View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                entering={BaseAnimationMock {}}
+                exiting={BaseAnimationMock {}}
+                style={
+                  [
+                    {
+                      "padding": 10,
+                    },
+                    undefined,
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+                testID="rowLabelContainerTestID"
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "textAlign": "center",
+                      },
+                      {
+                        "fontFamily": "Poppins-Medium",
+                        "fontSize": 12,
+                        "lineHeight": 18,
+                      },
+                      undefined,
+                      {
+                        "color": "#9A9A9A",
+                      },
+                    ]
+                  }
+                  testID="rowLabelTestID"
+                >
+                  title1
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                entering={BaseAnimationMock {}}
+                exiting={BaseAnimationMock {}}
+                style={
+                  [
+                    {
+                      "padding": 10,
+                    },
+                    undefined,
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+                testID="rowLabelContainerTestID"
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "textAlign": "center",
+                      },
+                      {
+                        "fontFamily": "Poppins-Medium",
+                        "fontSize": 12,
+                        "lineHeight": 18,
+                      },
+                      undefined,
+                      {
+                        "color": "#9A9A9A",
+                      },
+                    ]
+                  }
+                  testID="rowLabelTestID"
+                >
+                  title2
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                entering={BaseAnimationMock {}}
+                exiting={BaseAnimationMock {}}
+                style={
+                  [
+                    {
+                      "padding": 10,
+                    },
+                    undefined,
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+                testID="rowLabelContainerTestID"
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "textAlign": "center",
+                      },
+                      {
+                        "fontFamily": "Poppins-Medium",
+                        "fontSize": 12,
+                        "lineHeight": 18,
+                      },
+                      undefined,
+                      {
+                        "color": "#9A9A9A",
+                      },
+                    ]
+                  }
+                  testID="rowLabelTestID"
+                >
+                  title3
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`AccordionList renders with icons renders with right icon prop 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderRadius": 3,
+              "flexDirection": "row",
+              "padding": 10,
+            },
+            undefined,
+            {
+              "backgroundColor": "#EFF0F3",
+            },
+          ]
+        }
+        testID="labelContainerTestID"
+      >
+        <Text
+          style={
+            [
+              {
+                "fontFamily": "Poppins-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              },
+              {
+                "flex": 1,
+                "marginHorizontal": 10,
+                "textAlign": "left",
+              },
+              undefined,
+              {
+                "color": "#404040",
+              },
+            ]
+          }
+          testID="labelTestID"
+        >
+          title
+        </Text>
+        <Text
+          allowFontScaling={false}
+          selectable={false}
+          style={
+            [
+              {
+                "color": "dimgrey",
+                "fontSize": 24,
+              },
+              undefined,
+              {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              {},
+            ]
+          }
+          typography={
+            {
+              "body": {
+                "medium": {
+                  "fontFamily": "Poppins-Medium",
+                  "fontSize": 14,
+                  "lineHeight": 21,
+                },
+                "regular": {
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 14,
+                  "lineHeight": 16,
+                },
+                "smedium": {
+                  "fontFamily": "Poppins-Medium",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                },
+                "sregular": {
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 12,
+                  "lineHeight": 16,
+                },
+                "xsmedium": {
+                  "fontFamily": "Poppins-Medium",
+                  "fontSize": 10,
+                  "lineHeight": 16,
+                },
+                "xsregular": {
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 10,
+                  "lineHeight": 14,
+                },
+                "xxsmedium": {
+                  "fontFamily": "Poppins-Medium",
+                  "fontSize": 8,
+                  "lineHeight": 12,
+                },
+                "xxsregular": {
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 8,
+                  "lineHeight": 12,
+                },
+              },
+              "heading": {
+                "h1": {
+                  "fontFamily": "Poppins-Medium",
+                  "fontSize": 30,
+                  "lineHeight": 45,
+                },
+                "h2": {
+                  "fontFamily": "Poppins-Medium",
+                  "fontSize": 28,
+                  "lineHeight": 42,
+                },
+                "h3": {
+                  "fontFamily": "Poppins-Medium",
+                  "fontSize": 23,
+                  "lineHeight": 35,
+                },
+                "h4": {
+                  "fontFamily": "Poppins-Medium",
+                  "fontSize": 19,
+                  "lineHeight": 29,
+                },
+                "h5": {
+                  "fontFamily": "Poppins-Medium",
+                  "fontSize": 16,
+                  "lineHeight": 25,
+                },
+              },
+            }
+          }
+        >
+          󰧱
+        </Text>
+        <View
+          style={
+            [
+              {
+                "borderRadius": 3,
+                "paddingHorizontal": 10,
+                "paddingVertical": 6,
+              },
+              {
+                "backgroundColor": "#F6F9FF",
+              },
+            ]
+          }
+          testID="collapseIconContainerTestID"
+        >
+          <Text
+            accessibilityElementsHidden={true}
+            allowFontScaling={false}
+            importantForAccessibility="no-hide-descendants"
+            pointerEvents="none"
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#404040",
+                  "fontSize": 20,
+                },
+                [
+                  {
+                    "lineHeight": 20,
+                  },
+                  {
+                    "backgroundColor": "transparent",
+                  },
+                  {
+                    "transform": [
+                      {
+                        "rotateZ": "0deg",
+                      },
+                    ],
+                  },
+                ],
+                {
+                  "fontFamily": "Octicons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {},
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "height": 0,
+          },
+          {
+            "overflow": "hidden",
+          },
+        ]
+      }
+    >
+      <RCTScrollView
+        bounces={false}
+        data={
+          [
+            {
+              "content": "content1",
+              "title": "title1",
+            },
+            {
+              "content": "content2",
+              "title": "title2",
+            },
+            {
+              "content": "content3",
+              "title": "title3",
+            },
+          ]
+        }
+        getItem={[Function]}
+        getItemCount={[Function]}
+        keyExtractor={[Function]}
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onMomentumScrollBegin={[Function]}
+        onMomentumScrollEnd={[Function]}
+        onScroll={[Function]}
+        onScrollBeginDrag={[Function]}
+        onScrollEndDrag={[Function]}
+        removeClippedSubviews={false}
+        renderItem={[Function]}
+        scrollEventThrottle={50}
+        stickyHeaderIndices={[]}
+        viewabilityConfigCallbackPairs={[]}
+      >
+        <View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                entering={BaseAnimationMock {}}
+                exiting={BaseAnimationMock {}}
+                style={
+                  [
+                    {
+                      "padding": 10,
+                    },
+                    undefined,
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+                testID="rowLabelContainerTestID"
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "textAlign": "center",
+                      },
+                      {
+                        "fontFamily": "Poppins-Medium",
+                        "fontSize": 12,
+                        "lineHeight": 18,
+                      },
+                      undefined,
+                      {
+                        "color": "#9A9A9A",
+                      },
+                    ]
+                  }
+                  testID="rowLabelTestID"
+                >
+                  title1
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                entering={BaseAnimationMock {}}
+                exiting={BaseAnimationMock {}}
+                style={
+                  [
+                    {
+                      "padding": 10,
+                    },
+                    undefined,
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+                testID="rowLabelContainerTestID"
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "textAlign": "center",
+                      },
+                      {
+                        "fontFamily": "Poppins-Medium",
+                        "fontSize": 12,
+                        "lineHeight": 18,
+                      },
+                      undefined,
+                      {
+                        "color": "#9A9A9A",
+                      },
+                    ]
+                  }
+                  testID="rowLabelTestID"
+                >
+                  title2
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                entering={BaseAnimationMock {}}
+                exiting={BaseAnimationMock {}}
+                style={
+                  [
+                    {
+                      "padding": 10,
+                    },
+                    undefined,
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+                testID="rowLabelContainerTestID"
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "textAlign": "center",
+                      },
+                      {
+                        "fontFamily": "Poppins-Medium",
+                        "fontSize": 12,
+                        "lineHeight": 18,
+                      },
+                      undefined,
+                      {
+                        "color": "#9A9A9A",
+                      },
+                    ]
+                  }
+                  testID="rowLabelTestID"
+                >
+                  title3
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</View>
+`;

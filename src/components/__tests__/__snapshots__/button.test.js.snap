@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button default render 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "borderRadius": 5,
+          "flexDirection": "row",
+          "justifyContent": "center",
+        },
+        {
+          "padding": 13,
+        },
+        undefined,
+        {
+          "backgroundColor": "#195CEF",
+        },
+        {
+          "opacity": 1,
+        },
+      ]
+    }
+    testID="pressable"
+  >
+    <Text
+      style={
+        [
+          {
+            "fontWeight": "500",
+          },
+          {
+            "fontFamily": "Poppins-Medium",
+            "fontSize": 12,
+            "lineHeight": 18,
+          },
+          undefined,
+          {
+            "color": "#FFFFFF",
+          },
+        ]
+      }
+      testID="buttonLabel"
+    />
+  </View>
+</View>
+`;

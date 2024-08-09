@@ -4,6 +4,7 @@ import useComponentTheme from '../../core/hooks/useComponentTheme';
 import type { AvatarProps, FCCWD } from '../../types';
 import { applyDefaults } from '../../core/KitraProvider';
 import OcticonsIcon from '../Icons/Octicons';
+import Icon from '../Icons/Icon';
 
 const Avatar: FCCWD<AvatarProps> = (
   { source,
@@ -32,23 +33,33 @@ const Avatar: FCCWD<AvatarProps> = (
   };
 
   return (
-    <View style={[{
-      width: sizes[size].width,
-      height: sizes[size].height,
-      borderRadius: variant === 'rounded' ? 10 : 50,
-      alignItems: 'center',
-      justifyContent: 'center',
-    }, containerStyle, { backgroundColor: statusTheme.background }]}
+    <View
+      testID="avatarContainer"
+      style={[{
+        width: sizes[size].width,
+        height: sizes[size].height,
+        borderRadius: variant === 'rounded' ? 10 : 50,
+        alignItems: 'center',
+        justifyContent: 'center',
+      }, containerStyle, { backgroundColor: statusTheme.background }]}
     >
       {(() => {
         if (source) {
           return (
-            <Image source={source} resizeMethod="auto" style={[{ width: sizes[size].width, height: sizes[size].height, borderRadius: variant === 'rounded' ? 10 : 50 }]} />
+            <Image
+              testID="avatarImage"
+              source={source}
+              resizeMethod="auto"
+              style={[
+                { width: sizes[size].width,
+                  height: sizes[size].height,
+                  borderRadius: variant === 'rounded' ? 10 : 50 }]}
+            />
           );
         }
         if (label) {
           return (
-            <Text style={[labelTypography[size], labelStyle, { color: statusTheme.label }]}>
+            <Text testID="avatarLabel" style={[labelTypography[size], labelStyle, { color: statusTheme.label }]}>
               {splitName(label)}
 
             </Text>
@@ -56,7 +67,15 @@ const Avatar: FCCWD<AvatarProps> = (
         }
 
         return (
-          avatarIcon || <OcticonsIcon name="person" size={sizes[size].iconSize} color={statusTheme.label} />
+          avatarIcon || (
+          <Icon
+            type="octicon"
+            testID="avatarIcon"
+            name="person"
+            size={sizes[size].iconSize}
+            color={statusTheme.label}
+          />
+          )
         );
       })()}
 

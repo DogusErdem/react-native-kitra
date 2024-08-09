@@ -300,13 +300,11 @@ export const COLOR_COMPONENTS_LIGHT = (COLOR_SYSTEM:{colors:typeof COLOR_SYSTEM_
     },
     menu: {
       default: {
-        icon: COLOR_SYSTEM.colors.neutral.grey,
         itemLabel: COLOR_SYSTEM.colors.neutral.lightBlack,
         itemBackground: COLOR_SYSTEM.colors.system.filled,
         divider: COLOR_SYSTEM.colors.system.primary5,
       },
       active: {
-        icon: COLOR_SYSTEM.colors.system.primary,
         itemLabel: COLOR_SYSTEM.colors.neutral.lightBlack,
         itemBackground: COLOR_SYSTEM.colors.system.filled,
         divider: COLOR_SYSTEM.colors.system.primary5,
@@ -621,13 +619,11 @@ export const COLOR_COMPONENTS_DARK = (COLOR_SYSTEM:{colors:typeof COLOR_SYSTEM_D
   },
   menu: {
     default: {
-      icon: COLOR_SYSTEM.colors.neutral.grey,
       itemLabel: COLOR_SYSTEM.colors.neutral.lightBlack,
       itemBackground: COLOR_SYSTEM.colors.system.filled,
       divider: COLOR_SYSTEM.colors.system.primary5,
     },
     active: {
-      icon: COLOR_SYSTEM.colors.system.primary,
       itemLabel: COLOR_SYSTEM.colors.neutral.lightBlack,
       itemBackground: COLOR_SYSTEM.colors.system.filled,
       divider: COLOR_SYSTEM.colors.system.primary5,

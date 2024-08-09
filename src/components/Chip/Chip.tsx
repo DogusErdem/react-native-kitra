@@ -71,6 +71,7 @@ const Chip:FCCWD<ChipProps> = (
           style: [(left(select) ? { marginLeft: 6 } : null)],
         })}
         <Animated.Text
+          testID="chipLabel"
           style={[
             { fontSize: typographySize[size]?.fontSize,
               lineHeight: typographySize[size]?.lineHeight,

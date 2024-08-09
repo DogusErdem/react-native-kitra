@@ -23,6 +23,7 @@ const RadioButton: FCCWD<RadioButtonProps> = ({ theme, onChange, testID, style }
       <Animated.View
         entering={FadeIn}
         exiting={FadeOut}
+        testID="radioDot"
         style={[styles.innerCircle, { backgroundColor: statusTheme.dot }]}
       />
       )}

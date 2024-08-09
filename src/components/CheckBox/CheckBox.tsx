@@ -60,6 +60,7 @@ export const CheckBox: FCCWD<CheckBoxProps & TouchableOpacityProps> = (
 
   return (
     <AnimatedTouchableOpacity
+      testID="checkBoxContainer"
       activeOpacity={1}
       onPress={toggle}
       disabled={disabled}
@@ -72,6 +73,7 @@ export const CheckBox: FCCWD<CheckBoxProps & TouchableOpacityProps> = (
             color={statusTheme.icon}
             name="check"
             size={12}
+            testID="checkBoxIcon"
           />
         </Animated.View>
       )}

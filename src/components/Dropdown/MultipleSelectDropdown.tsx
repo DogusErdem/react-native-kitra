@@ -8,6 +8,7 @@ import Button from '../Button/Button';
 import FeatherIcon from '../Icons/Feather';
 import IoniconsIcon from '../Icons/Ionicons';
 import OcticonsIcon from '../Icons/Octicons';
+import Icon from '../Icons/Icon';
 
 const windowsHeight = Dimensions.get('window').height;
 
@@ -150,6 +151,7 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
           </View>
         )}
         <Text
+          testID="multipleDropdownButtonLabel"
           numberOfLines={1}
           style={[
             sizes[size].typography,
@@ -168,7 +170,9 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
         <View style={[Style.rightItem]}>
           {rightElement || (
           <Animated.View style={dropdownAnimation}>
-            <FeatherIcon
+            <Icon
+              testID="multipleDropwdownButtonIcon"
+              type="feather"
               name="chevron-down"
               size={14}
               color={statusTheme.collapseIcon}
@@ -183,7 +187,7 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
         exiting={FadeOut}
       >
         <View
-          testID="dropdown-list"
+          testID="multipleDropdownListContainer"
           style={[Style.listContainer,
             {
               width: cord?.width,
@@ -203,6 +207,7 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
               const isSelected = isItemSelected(item || {});
               return (
                 <TouchableOpacity
+                  testID={`multipleItemButton${index}`}
                   key={item.keyID || item}
                   activeOpacity={0.8}
                   onPress={() => {
@@ -235,6 +240,7 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
                     )}
                   </TouchableOpacity>
                   <Text
+                    testID={`multipleItemButtonLabel${index}`}
                     style={[sizes[size].typography,
                       { marginHorizontal: 10 },
                       rowTextStyle, { color: componentTheme[isSelected ? 'selected' : componentStatus]?.itemLabel }]}

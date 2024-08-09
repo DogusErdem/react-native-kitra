@@ -54,9 +54,13 @@ const Badge: FCCWD<BadgeProps> = (
   };
 
   return (
-    <View style={[containerStyle, { backgroundColor: 'transparent', alignSelf: 'baseline' }]}>
+    <View
+      testID="badgeNodeContainer"
+      style={[containerStyle, { backgroundColor: 'transparent', alignSelf: 'baseline' }]}
+    >
       {visible ? (
         <Animated.View
+          testID="badgeContainer"
           exiting={FadeOut.duration(300)}
           entering={FadeIn.duration(400)}
           style={[badgeStyles.container,
@@ -72,7 +76,14 @@ const Badge: FCCWD<BadgeProps> = (
         >
           {(() => {
             if (label) {
-              return <Text style={[{ fontSize: styleOfSize[variant][size].fontSize }, labelStyle, { color: statusTheme.label }]}>{label}</Text>;
+              return (
+                <Text
+                  testID="badgeLabel"
+                  style={[{ fontSize: styleOfSize[variant][size].fontSize }, labelStyle, { color: statusTheme.label }]}
+                >
+                  {label}
+                </Text>
+              );
             }
             if (icon) {
               return icon;
