@@ -85,7 +85,6 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
     const selectedObjectsTemp = [...selectedObjects];
 
     const valueIndex = selectedObjectsTemp.findIndex(obj => displayedRowValue(obj) === displayedRowValue(value));
-    console.log(valueIndex);
 
     if (valueIndex > -1) {
       selectedObjectsTemp.splice(valueIndex, 1);
@@ -130,7 +129,7 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
   return (
     <View testID={testID} style={[containerStyle, { zIndex: visible ? 1000 : 0 }]}>
       <TouchableOpacity
-        testID="dropdown-button"
+        testID="multipleDropdownButton"
         ref={dropdown}
         activeOpacity={0.9}
         disabled={disabled}
@@ -226,13 +225,16 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
                 >
                   <TouchableOpacity
                     disabled
+                    testID={`dropdownCheckBoxButton${index}`}
                     style={[Style.checkBox, {
                       borderColor: componentTheme[isSelected ? 'selected' : componentStatus]?.checkBorder,
                       backgroundColor: componentTheme[isSelected ? 'selected' : componentStatus]?.checkBackground,
                     }]}
                   >
                     {isSelected && (
-                    <OcticonsIcon
+                    <Icon
+                      testID={`dropdownCheckBoxIcon${index}`}
+                      type="octicon"
                       color={componentTheme[isSelected ? 'selected' : componentStatus]?.checkIcon}
                       name="check"
                       size={12}
@@ -254,6 +256,7 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
           </ScrollView>
           {selectall && (
           <TouchableOpacity
+            testID="multipleDropdownSelectAllButton"
             activeOpacity={0.8}
             onPress={() => {
               if (data?.length === selectedObjects.length) {
@@ -280,7 +283,7 @@ const MultipleDropdown: FCCWD<MultipleDropdownProps> = (
           </TouchableOpacity>
           )}
           <Button
-            testID="dropdown-complete-button"
+            testID="dropdownCompleteButton"
             onPress={() => {
               if (onComplete) onComplete(selectedObjects); setVisible(false);
             }}

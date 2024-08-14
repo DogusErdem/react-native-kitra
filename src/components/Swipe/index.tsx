@@ -120,6 +120,7 @@ const Swipe: FCCWD<SwipeProps & SwipeableProps> = ({
 
   return (
     <Swipeable
+      testID="swipeable"
       ref={swipeRef}
       friction={2}
       enableTrackpadTwoFingerGesture
