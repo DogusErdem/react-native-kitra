@@ -210,20 +210,24 @@ const TextInput: FCCWD<TextInputProps & RNTextInputProps> = (
   }, [props?.value]);
 
   return (
-    <View style={[containerStyle]}>
-      <Animated.View style={[{
-        borderRadius: 5,
-        borderWidth: editable ? 1 : 0,
-        height: sizeStyles[size].height,
-        maxHeight: sizeStyles[size].height,
-      },
-      // @ts-ignore
-      borderAnimation, inputContainerStyle, { backgroundColor: statusTheme.background }]}
-      >
-        <View style={{ flex: 1,
-          flexDirection: 'row',
+    <View testID="inputContainer" style={[containerStyle]}>
+      <Animated.View
+        testID="inputInnerContainer"
+        style={[{
+          borderRadius: 5,
+          borderWidth: editable ? 1 : 0,
           height: sizeStyles[size].height,
-          paddingHorizontal: sizeStyles[size].paddingHorizontal }}
+          maxHeight: sizeStyles[size].height,
+        },
+        // @ts-ignore
+        borderAnimation, inputContainerStyle, { backgroundColor: statusTheme.background }]}
+      >
+        <View
+          testID="inputInside"
+          style={{ flex: 1,
+            flexDirection: 'row',
+            height: sizeStyles[size].height,
+            paddingHorizontal: sizeStyles[size].paddingHorizontal }}
         >
           {typeof left === 'function' && (
             <View style={{ alignSelf: 'center',
@@ -235,14 +239,16 @@ const TextInput: FCCWD<TextInputProps & RNTextInputProps> = (
 
           <View style={{ flex: 1, flexDirection: 'row' }}>
             {variant === 'outlined' && (
-            <Animated.View style={[{ position: 'absolute',
-              width: labelLayout.width + 8,
-              height: 2,
-              zIndex: 100 }, labelPositionAnimation, { backgroundColor: statusTheme.background }]}
+            <Animated.View
+              testID="outlinedContainer"
+              style={[{ position: 'absolute',
+                width: labelLayout.width + 8,
+                height: 2,
+                zIndex: 100 }, labelPositionAnimation, { backgroundColor: statusTheme.background }]}
             />
             )}
-
             <AnimatedTextInput
+              testID="input"
               ref={inputRef}
               editable={editable}
               style={[{
@@ -259,13 +265,15 @@ const TextInput: FCCWD<TextInputProps & RNTextInputProps> = (
               {...props}
             />
             {label ? (
-              <View style={[
-                {
-                  position: 'absolute',
-                  zIndex: 101,
-                },
-                labelContainerStyle,
-              ]}
+              <View
+                testID="labelContainer"
+                style={[
+                  {
+                    position: 'absolute',
+                    zIndex: 101,
+                  },
+                  labelContainerStyle,
+                ]}
               >
                 <TouchableOpacity
                   onPress={() => inputRef.current?.focus()}
@@ -273,8 +281,10 @@ const TextInput: FCCWD<TextInputProps & RNTextInputProps> = (
                   onLayout={event => setLabelLayout({ width: event.nativeEvent.layout.width,
                     height: event.nativeEvent.layout.height })}
                 >
-                  <Animated.Text style={[{ fontFamily: labelStyles[size].default.fontFamily },
-                    labelStyle, labelFontAnimation, { color: statusTheme.label }]}
+                  <Animated.Text
+                    testID="inputLabel"
+                    style={[{ fontFamily: labelStyles[size].default.fontFamily },
+                      labelStyle, labelFontAnimation, { color: statusTheme.label }]}
                   >
                     {label}
                   </Animated.Text>
@@ -296,14 +306,18 @@ const TextInput: FCCWD<TextInputProps & RNTextInputProps> = (
         display: (error || !!bottomLabel || count) ? 'flex' : 'none',
         alignSelf: 'stretch' }]}
       >
-        <Text style={[labelStyles[size].default, bottomLabelStyle,
-          { color: statusTheme.bottomLabel }]}
+        <Text
+          testID="inputBottomLabel"
+          style={[labelStyles[size].default, bottomLabelStyle,
+            { color: statusTheme.bottomLabel }]}
         >
           {bottomLabel}
         </Text>
         {count ? (
-          <Text style={[labelStyles[size].default, bottomLabelStyle,
-            { color: statusTheme.countLabel }]}
+          <Text
+            testID="inputCountLabel"
+            style={[labelStyles[size].default, bottomLabelStyle,
+              { color: statusTheme.countLabel }]}
           >
             {`${counts}/${props.maxLength}`}
           </Text>

@@ -49,7 +49,9 @@ const ToggleButton: FCCWD<ToggleButtonProps> = (
             index === buttonList.length - 1 ? { borderTopRightRadius: 5, borderBottomRightRadius: 5 } : null,
           ]}
         >
-          <Text style={
+          <Text
+            testID={`toggleButtonLabel${index}`}
+            style={
             [
               size === 'small' ? typography?.body.smedium : typography?.body.medium,
               { color: componentTheme[item.active ? 'active' : 'default']?.label },

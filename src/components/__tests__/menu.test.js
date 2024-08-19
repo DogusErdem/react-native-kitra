@@ -117,11 +117,7 @@ describe('Menu', () => {
       const openButton = getByTestId('openButton');
       fireEvent.press(openButton);
       const menuContainer = getByTestId('itemsContainer');
-      act(() => {
-        fireEvent(menuContainer, 'layout', {
-          nativeEvent: { layout: { } },
-        });
-      });
+
       expect(menuContainer).toBeVisible();
 
       fireEvent.press(openButton);
