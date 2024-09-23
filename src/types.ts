@@ -257,6 +257,10 @@ export type CheckBoxProps = {
         *Whether the press behavior is disabled
     */
     disabled?: boolean,
+     /**
+        *Variant of the text input. Defaults to 'circular'
+    */
+        variant?:'circular' |'rectangular'
     /**
         *The theme to use for the component
     */
@@ -334,10 +338,6 @@ export type DrowdownProps = {
         *The size of the dropdown. Defaults to 'medium'
     */
     size?: 'large' | 'medium' | 'small',
-    /**
-        *Whether to include a "Select All" option in the dropdown. Defaults to false
-    */
-    selectall?: boolean,
     /**
         *Whether the press behavior is disabled
     */
@@ -437,6 +437,10 @@ export type MultipleDropdownProps = DrowdownProps & {
         *Text to be displayed in the selectall button
     */
    selectallButtonLabel?:string,
+   /**
+        *Whether to include a "Select All" option in the dropdown. Defaults to false
+    */
+    selectall?: boolean,
        /**
         *The theme to use for the component
     */
@@ -586,14 +590,6 @@ export type RadioButtonProps = {
         *The theme to use for the component
     */
     theme?: DeepPartial<(ComponentThemeType['radioButton'])>
-}
-
-export type SearchBarProps = {
-    size?: 'small' | 'medium' | 'large',
-    style?: StyleProp<ViewStyle>,
-    value?: string
-    filterPattern: (text: string) => Array<any>,
-    filterOnChange: (event: any) => any;
 }
 
 export type SliderProps = {
